@@ -2,54 +2,110 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-family: sans-serif;
 }
-header{
-    max-width: 1349px;
-    margin: auto;
-    height: 800px;
-}
+
 nav{
-    height: 74px;
-    padding: 0 50px 0 120px;
+    height: 75px;
+    max-width:100vw;
+    padding: 0 50px 0 60px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1.5px solid #A9A9A9;
+    border: 1px solid gray;
 }
 nav>div>input{
     height: 40px;
-    width: 200px;
-    padding-left: 20px;
     outline: none;
-    border: 1px solid gray;
-
+    border: none;
     &::placeholder{
         font-size:1.2rem;
         font-weight: 600;
     }
 }
-nav>div>svg{
-    position: relative;
-    top: 8px;
-    right: 35px;
+nav>div{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
 }
-header>div{
-    height: 685px;
-    background-image: url(./imag.png);
+#menuList{
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#clsoeIcon{
+    margin: 50px 0 0 200px;
+}
+.hidden{
+    position: absolute;
+    top: 0;
+    left: -301px;
+    transition: left 0.7s ease-in-out;
+}
+.show{
+    left: 0;
+}
+
+#menuList>ul{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    font-size: 1.24rem;
+}
+#menuList>ul>li>a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.webStudio>div{
+    height: 710px;
+    width: 100%;
+    background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/f09132265fa950248f852518/pexelsphoto205316.jpeg");
+    background-size: 123%;
+    background-repeat: no-repeat;
+    background-position:42.3% 36.11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.webStudio>div>h1{
+    font-size: 6vw;
+    text-transform: capitalize;
+}
+.webStudio>div>a{
+    font-size: larger;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+
+    &:hover{
+        color: #1ba098;
+        border-bottom: 2px solid #1ba098;
+        font-weight: 600;
+    }
 }
 .aboutStudio{
-    height: 600px;
-    padding: 50px 0 0 0;
     background-color: #1ba098;
+    padding: 50px 0 30px 0;
 }
 .aboutStudio>div{
-    height: 500px;
-    width: 78%;
+    max-width: 1349px;
+    width: calc(100vw - 24%);
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
 .aboutStudioImg>img{
     height: 490px;
@@ -58,63 +114,55 @@ header>div{
 .aboutStudioHeading>h2{
     font-size: 6rem;
     color: white;
-    padding: 10px 20px;
+    padding: 7px 20px;
     line-height: 1;
-    margin: 50px 0 0 20px;
+    margin: 0 10px 64px 20px;
     border-left: 10px solid white;
 }
-.aboutStudioHeading     >p{
+.aboutStudioHeading>p{
     font-size: 16px;
-    margin: 16px 0px 0px 22px;
+    margin: 32px 158px 0 22px;
     color: white;
     font-weight: 700;
     line-height: 1.5;
 }
-.blackBox{
-    display: flex;
-    align-items: end;
-    justify-content: flex-end;
-}
 .blackBox>div{
     height: 112px;
     width: 112px;
+    margin-top: 350px;
     background-color: black;
 }
-.business_strategy{
-   height: 500px;
-    display: grid;
-    grid-template-rows: 10% 50% 40%;
-    margin-bottom: 60px;
+.business_strategy>div{
+    max-width: 1349px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    margin: 0 auto 60px auto;
     padding: 50px 283px 0 217px;
 }
-.business_strategy>h4{
+.business_strategy>div>h4{
     font-size: 20px;
 }
-.business_strategy>h2{
+.business_strategy>div>h2{
     font-size:3.75rem;
     line-height: 1.1;
 }
-.business_strategy>p{
+.business_strategy>div>p{
     font-size: 1rem;
-    padding-right: 200px;
+    padding-right: 170px;
     line-height: 1.7;
     font-weight:700;
 }
 .contactUs{
-    height: 560px;
-    width: 100%;
-    margin: 370px auto 0 auto;
+    margin: 460px auto 0 auto;
     background-color: #deb992;
+    height: 560px;
 }
 .contactUs>div{
-    height: 100%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 290px 365px 350px;
-    place-items: center;
-    column-gap: 36px;
-    margin: auto;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 .contact_col1Text{
     height: 390px;
@@ -124,7 +172,8 @@ header>div{
     place-items: center;
     padding:50px 32px ;
     background-color: #1ba098;
-    margin: -226px 0 20px 0;
+    position: relative;
+    bottom: 224px;
 }
 .contact_col1Text>h4{
     font-size: 1.5rem;
@@ -132,13 +181,16 @@ header>div{
 .contact_col1Img{
     height: 288px;
     width: 288px;
+    position: relative;
+    bottom: 180px;;
     background-image: url("	https://images03.nicepage.com/c461c07a441a5d220e8feb1a/7e745d6b901858f38aeadaf1/2463446.jpg");
     background-size: cover;
 }
 .contact_col2Img1{
     height: 220px;
     width: 330px;
-    margin: -400px 0 35px 0;
+    position: relative;
+    bottom: 370px;
     background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/5b893371825159908b6265f3/2920ed9aecdbf621ab4baa899023408e.jpg");
     background-size: cover;
 }
@@ -150,6 +202,8 @@ header>div{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    position: relative;
+    bottom: 280px;
     text-transform: capitalize;
     font-size: 3rem;
     color: white;
@@ -160,7 +214,8 @@ header>div{
     text-align: center;
     font-size: 1.2rem;
     width: 330px;
-    margin: 30px 0 0 0;
+    position: relative;
+    bottom: 230px;
 }
 .contact_col2SocialLink>a{
     font-weight: 600;
@@ -209,24 +264,25 @@ header>div{
     line-height: 1.4;
 }
 .branding{
-    position: relative  ;
     height: 780px;
     width: 100%;
     background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/2f52c8b35b955b5dbb233b93/pexelsphoto1770803.jpeg");
     background-size: cover;
-    background-position: 0 -143px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 .branding>div{
     height: 300px;
-    width: 100%;
+    max-width: 1349px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 20px 100px;
     column-gap: 20px;
     place-items: center;
     color: white;
-    position: absolute;
-    bottom: 0;
 }
 #brandingHeading>h5{
     font-size: 1.25rem;
@@ -244,20 +300,17 @@ header>div{
     font-size: 3.75rem;
 }
 .aboutUs{
-    height: 990px;
-    display: grid;
-    place-items: center;
+    padding: 50px 0 120px 0;
     background-color: #deb992;
 }
 .aboutUs>div{
-    height: 780px;
-    width: 87%;
+    max-width: 1349px;
+    width: 84%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
-
 .aboutUs_col1>div{
     height: 380px;
     width: 360px;
@@ -269,16 +322,21 @@ header>div{
     background-color: white;
     height: 400px;
     width: 360px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: baseline;
+    justify-content: center;
     margin: 50px 0 20px 0;
     padding: 104px 48px;
 }
 .aboutUSHeading>h1{
-    font-size: 3.75rem;
+    font-size: 3rem;
 }
 .aboutUSHeading>p{
     font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 13px 0 0;
 }
 .aboutUs_col2Img{
     height: 380px;
@@ -291,7 +349,6 @@ header>div{
     width: 360px;
     background-image: url("	https://images03.nicepage.com/c461c07a441a5d220e8feb1a/df67a56b5e86559a887559d8/sssmin.jpg?version=");
     background-size: cover;
-    margin: -60px 0 0 0;
 }
 .col3text{
     margin-top: 30px;
@@ -306,55 +363,54 @@ header>div{
     line-height: 1.1;
     padding: 126px 46px;
 }
-.followUs{
-    height: 390px;
-    display: grid;
-    place-items: center;
-}
 .followUs>div{
-    height: 280px;
-    width: 82%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    max-width: 1349px;
+    width: calc(100vw - 20%);
+    margin: 60px auto;
+    display: flex;
 }
 .followimg{
-    height:100%;
-    width: 410px;
+    height: 280px;
+    width: 400px;
     background-image: url("//images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/373b50c18e5258b3a2e4de57/pexels-photo-1391404.png");
     background-size: cover;
 }
-
 .followHeading{
     display: grid;
     place-items: center;
     text-transform: capitalize;
-    font-size: 2.6rem;
+    padding-right: 40px;
+    font-size: 2rem;
+    margin: 0 40px;
 }
 .followLinks{
     display: flex;
-    /* gap: 40px; */
     align-items: center;
     justify-content: space-around;
-    margin: 0 0 0 79px;
-    font-size: 3rem;
+    gap: 24px;
+    font-size: 2.7rem;
+    flex-wrap: wrap;
 }
-
 .section6{
-    height: 640px;
+    background-color: #051622;
+}
+.section6>div{
+    max-width: 1349px;
+    margin: auto;
     display: grid;
     grid-template-columns: 35% 35% 26%;
     padding: 50px 129px;
     column-gap: 20px;
-    background-color: #051622;
 }
 #sec6_col1{
+    height: 580px;
     background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/834b2019e0d95c41b3c49a8a/pexelsphoto4035323.jpeg");
     background-size: cover;
 }
 #sec6_col2{
-    display: grid;
-    place-items: center;
+    height: 580px;
+    display:flex;
+    align-items: center;
     font-weight: 700;
     line-height: 1.8;
     color: white;
@@ -365,6 +421,7 @@ header>div{
     background-color: #1ba098;
 }
 #sec6_col3{
+    height: 580px;
     background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/8dc0c387e6435aa4890f6ab2/07bdf21bb345243389bce1f33ff6a84a.jpg");
     background-size: cover;
 }
@@ -376,7 +433,6 @@ footer{
 footer>div{
     color: white;
     height: 100%;
-    width: 50%;
     margin: auto;
     text-align: center;
     display: flex;
@@ -389,8 +445,401 @@ footer>div{
     color: lightblue;
 }
 
-.faltu{
-    height: 500px;
-    width: 100%;
-    background-color: red;
-}
+@media only screen and (min-width:400px) and (max-width:699px) {
+    nav{
+        padding: 0 10px;
+    }
+    nav>div>input{
+        width: 115px;
+    }
+    .webStudio>div{
+        height: 34.3vh;
+        background-size: 130%;
+    }
+    .webStudio>div>a{
+        font-size: 0.6rem;
+    }
+    .aboutStudioImg>img {
+        height: 409px;
+        width: 300px;
+    }
+    .aboutStudio>div{
+        flex-wrap: wrap;
+    }
+    .blackBox>div{
+        height: 80px;
+        width: 80px;
+        margin: 0 0 0 250px;
+    }
+    .aboutStudioHeading>p {
+        margin: 30px 63px 0px 22px;
+        font-weight: 100;
+        line-height: 1.8;
+    }
+    .business_strategy>div {
+        margin: 0 auto 60px auto;
+        padding: 50px 0 0 40px;
+    }
+    .business_strategy>div>h2{
+        font-size:3rem;
+    }
+    .business_strategy>div>p{
+        padding-right:40px;
+    }
+    .branding {
+        height: 525px;
+        background-position: 30%;
+        padding: 0 0 30px 0;
+    }
+    .branding>div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-around;
+        padding: 0 0 0 40px;
+    }
+    #brandingPara{
+        padding: 0;
+    }
+    .contactUs{
+        height: auto;
+        margin-top: 570px;
+        padding: 70px 0;
+    }
+    .contactUs>div{
+        gap: 0;
+    }
+    .contact_col1Text {
+        height: 233px;
+        padding: 0px 32px;
+        position: relative;
+        bottom: 550px;
+        margin: 0;
+    }
+    .contact_col1Img{
+        position: relative;
+        bottom: 500px;
+    }
+    .contact_col2Img1 {
+        height: 147px;
+        position: relative;
+        bottom: 429px;
+    }
+    .aboutUs_col1>div {
+        height: 300px;
+        width: 280px;
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .aboutUSHeading{
+        height: 182px;
+        width: 280px;
+        padding: 0 0 0 27px;
+        margin: 5px 29px 19px 19px;
+    }
+    .aboutUSHeading>h1{
+        font-size: 2rem;
+    }
+    .col3text,.aboutUs_col3Img,.aboutUs_col2Img{
+        height: 320px;
+        width: 280px;
+        margin-left: 20px;
+    }
+    .aboutUs_col3Img{
+        background-position-x: -57px;
+    }
+    .col3text>p{
+        padding: 78px 32px;
+        font-size: 1.87rem;
+    }
+    .followUs>div {
+        display: flex;
+        flex-direction: column;
+    }
+    .followimg{
+        height: 200px;
+        width: 310px;
+    }
+    .followHeading{
+        margin: 20px 0 ;
+        padding: 0;
+        display:flex;
+    }
+    .followLinks{
+        justify-content:start;
+        gap: 20px;
+        font-size: 2.2rem;
+    }
+   
+    .section6>div {
+        max-width: 1349px;
+        margin: auto;
+        padding: 50px 37px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #sec6_col1{
+        height: 390px;
+    }
+    #sec6_col2{
+        height: 300px;
+    }
+    #sec6_col3{
+        height: 130px;
+    }
+    footer>div {
+        padding: 0px 16px;
+    }
+};
+
+  @media only screen and (min-width: 700px) and (max-width:1000px){
+    .webStudio>div{
+        height: 380px;
+    }
+    .aboutStudio>div{
+        flex-wrap: wrap;
+        margin: 0;
+        width: auto;
+    }
+
+    .aboutStudioImg>img {
+        height: 680px;
+        width: 561px;
+    }
+    .aboutStudioHeading>h2 {
+        font-size: 5rem;
+        margin: 0 0 64px 70px;
+    }
+    .aboutStudioHeading>p{
+        margin-left: 67px;
+    }
+    .blackBox>div {
+        height: 100px;
+        width: 100px;
+        margin: 0 0 0 503px;
+    }
+    .business_strategy>div {
+        margin: 29px auto 60px auto;
+        padding: 0 0 0 41px;
+    }
+    .business_strategy>div>h2 {
+        font-size: 2.75rem;
+        line-height: 1.1;
+        padding: 0 99px 0 0;
+    }
+    .business_strategy>div>p {
+        padding-right: 160px;
+    }
+    .contactUs>div{
+        flex-direction: column;
+    }
+    .contact_col1Text {
+        height: 223px;
+        width: 580px;
+        margin: auto;
+        padding: 4px 100px 6px 40px;
+        bottom: 315px;
+        display: flex;
+        line-height: 1.7;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .contactUs{
+        height: auto;
+    }
+    .contact_col1Img {
+        height: 540px;
+        width: 571px;
+        margin: auto;
+    }
+    .contact_col2Img1 {
+        width: 568px;
+        bottom: 200px;
+        margin: auto;
+    }
+    .contact_col2Img2 {
+        height: 230px;
+        width: 568px;
+        font-size: 2rem;
+        bottom: 165px;
+        margin: auto;
+    }
+    .contact_col2Img2>img{
+        height: 100px
+    }
+    .contact_col2SocialLink {
+        height: 100px;
+        font-size: 1.8rem;
+        bottom: 106px;
+        margin: 0px 0 0 63px;
+    }
+    .contact_col2SocialLink>div{
+        padding: 10px 0;
+        gap: 50px;
+    }
+    .contact_col2SocialLink>div>a {
+        font-size: 2.2rem;
+    }
+    .contact_col3Img {
+        height: 462px;
+        width: 568px;
+        margin: auto;
+        position: relative;
+        bottom: 100px;
+    }
+    .contact_col3Text {
+        height: 203px;
+        width: 571px;
+        display: flex;
+        margin:  0 auto 50px auto;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-around;
+        padding: 0 115px 0 40px;
+    }
+    .branding>div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-around;
+        padding: 0 0 0 40px;
+    }
+    #brandingHeading>p{
+        padding: 0 166px 0 0;
+        line-height: 1.5;
+    }
+    #brandingPara{
+        padding: 0 172px 0 0;
+        line-height: 1.5
+    }
+    .aboutUs_col1>div {
+        height: 580px;
+        width: 560px;
+        margin:auto;
+    }
+    .aboutUSHeading {
+        height: 208px;
+        width: 560px;
+        margin: 50px auto 20px auto;
+        padding: 0 48px;
+    }
+    .aboutUSHeading>h1{
+        font-size: 2.5rem
+    }
+    .aboutUSHeading>p{
+        line-height: 1.6;
+    }
+    .aboutUs_col2Img{
+        height: 597px;
+        width: 554px;
+        margin: auto;
+    }
+    
+    .aboutUs_col3Img{
+        height: 326px;
+        width: 556px;
+        background-position: 1px -50px;
+        margin: auto;
+    }
+    .col3text {
+        height: 219px;
+        width: 555px;
+        margin: 53px auto 0 auto;
+    }
+    .col3text>p {
+        font-size: 2.14rem;
+        line-height: 1.4;
+        padding: 45px 46px;
+    }
+    .followUs>div{
+        flex-wrap: wrap;
+    }
+    .followimg {
+        height: 372px;
+        width: 554px;
+        margin: auto;
+    }
+    .followHeading {
+        font-size: 2rem;
+        margin: 25px 88px 30px 0;
+    }
+    .followLinks {
+        gap: 50px;
+        font-size: 2rem;
+    }
+    .section6>div{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px ;
+        gap: 30px;
+    }
+    #sec6_col2,#sec6_col3{
+        height: 180px
+    }
+};
+
+@media only screen and (min-width:1024px) {
+    .aboutStudio{
+        padding: 60px 0 80px 0;
+    }
+    .webStudio>div{
+        height: 580px;
+    }
+    .aboutStudioHeading>p{
+        margin-right: 107px;
+    }
+    .business_strategy>div {
+        padding: 50px 210px 0 56px;
+    }
+    .aboutUs>div{
+        width: 87%;
+        margin: auto;
+    }
+    .aboutUSHeading{
+        align-items: center;
+        justify-content: space-around;
+        padding: 76px 28px;
+    }
+    .aboutUs_col1>div{
+        height: 270px;
+        width: 260px;
+    }
+    .aboutUs_col2{
+        width: 270px;
+    }
+    .aboutUs_col3{
+        width: 300px;
+    }
+    .aboutUSHeading,.aboutUs_col2Img,.col3text,.aboutUs_col3Img{
+        width: auto;
+    }
+    .aboutUs_col3Img{
+        height: 277px;
+    }
+    .col3text>p{
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 1.34;
+        padding: 66px 41px;
+    }
+    .followHeading {
+        margin-right: 0;
+        padding-right: 0    ;
+    }
+    .followUs>div{
+        width: auto;
+        gap: 28px;
+    }
+    #sec6_col1,#sec6_col2,#sec6_col3{
+        height: 450px;
+    }
+    .section6>div {
+        padding: 50px 78px;
+        column-gap: 17px;
+    }
+};  
+
+  
