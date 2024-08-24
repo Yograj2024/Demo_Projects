@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./dis/output.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
    <header>
-        <nav>
-            <div>
-                <input type="text" placeholder="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#A9A9A9"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+       <nav>
+           <div>
+               <input type="text" placeholder="Search" >
+               <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#A9A9A9"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#666666"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#666666"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
         </nav>
-        <div></div>
-   </heade>
-   <main>
-    <section class="aboutStudio">
+        <div id="menuList" class="hidden">
+            <svg id="clsoeIcon" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#F3F3F3"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+            <ul id="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </heade>
+    <main>
+        <section class="webStudio">
+            <div>
+                <h1>web studio</h1>
+                <a href="#">read more</a>
+            </div>
+        </section>
+        <section class="aboutStudio">
         <div>
             <div class="aboutStudioImg">
                 <img src="https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/ff5f45fcfd135687aded6e3b/pexels-photo-3818115.jpeg" alt="">
@@ -33,13 +45,15 @@
                 <div></div>
             </div>
         </div>
-    </section> 
-    <section class="business_strategy">
-        <h4>BUSINESS STRATEGY</h4>
-        <h2>Leverage agile frameworks to provide a robust synopsis for high level overviews.</h2>
-        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-    </section>
-    <section class="contactUs">
+        </section> 
+        <section class="business_strategy">
+        <div>
+            <h4>BUSINESS STRATEGY</h4>
+            <h2>Leverage agile frameworks to provide a robust synopsis for high level overviews.</h2>
+            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        </div>
+        </section>
+        <section class="contactUs" id="contact">
         <div>
             <div class="contact_col1">
                 <div class="contact_col1Text">
@@ -73,8 +87,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="branding">
+        </section> 
+        <section class="branding">
         <div>
             <div id="brandingHeading">
                 <h5>Branding  36</h5>
@@ -87,12 +101,11 @@
                 <h1 id="joshHeading">josh lou</h1>
             </div>
         </div>
-    </section>
-    <section class="aboutUs">
+        </section>
+        <section class="aboutUs" id="about">
         <div>
             <div class="aboutUs_col1">
                 <div></div>
-                <p></p>
             </div>
             <div class="aboutUs_col2">
                 <div class="aboutUSHeading">
@@ -102,7 +115,6 @@
                 <div class="aboutUs_col2Img"></div>
             </div>
             <div class="aboutUs_col3">
-                <div></div>
                 <div class="work">
                     <div class="aboutUs_col3Img"></div>
                     <div class="col3text">
@@ -111,28 +123,30 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="followUs">
+        </section>
+        <section class="followUs">
         <div>
             <div class="followimg"></div>
             <div class="followHeading">
                 <h2>follow us</h2>
-            </div>
+            </div><br>
             <div class="followLinks">
                 <a href="#"><i class="fa-brands fa-twitter " style="color: #000000;"></i></a>
-                <a href="#"></a><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-                <a href="#"></a><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></a>
-                <a href="#"></a><i class="fa-brands fa-google-plus-g" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g" style="color: #000000;"></i></a>
             </div>
         </div>
-    </section>
-    <section class="section6">
-        <div class="section6_col" id="sec6_col1"></div>
-        <div class="section6_col" id="sec6_col2">
-            <p>The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.</p>
+        </section>
+        <section class="section6">
+        <div>
+            <div class="section6_col" id="sec6_col1"></div>
+            <div class="section6_col" id="sec6_col2">
+                <p>The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.</p>
+            </div>
+            <div class="section6_col" id="sec6_col3"></div>
         </div>
-        <div class="section6_col" id="sec6_col3"></div>
-    </section>
+        </section>
 </main>
 <footer>
     <div>
@@ -144,6 +158,7 @@
         </div>
     </div>
 </footer>
-   <script src="./script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
