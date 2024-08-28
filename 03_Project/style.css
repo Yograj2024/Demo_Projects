@@ -1,0 +1,809 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 10px 40px;
+    text-decoration: none;
+    background:white;
+    color: #85B3EF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.93rem;
+    border-radius: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    
+}
+#menuList{
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+#clsoeIcon{
+    margin: 50px 0 0 200px;
+}
+.hidden{
+    position: absolute;
+    top: 0;
+    left: -301px;
+    transition: left 0.7s ease-in-out;
+}
+.show{
+    left: 0;
+}
+
+#menuList>ul{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    font-size: 1.24rem;
+}
+#menuList>ul>li>a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.introduction{
+    background: #5595E8;
+    padding-bottom: 100px;
+}
+.introduction>div>img{
+    height: 510px;
+    padding: 0 0 0 20px;
+}
+.itcompany{
+    max-width: 582px;
+    padding: 20px 40px 30px 40px;
+    position: relative;
+    border-radius: 30px;
+    background: #EDF4FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    left: 767px;
+    bottom: 68px;
+}
+.itcompany>h1{
+    font-size: 4rem;
+    color: #85B3EF;
+    margin-bottom: 20px;
+}
+.itcompany>p{
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 10px 0;
+    font-weight: 100;
+}
+.itcompany>p>span{
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+#btn1{
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 1.6px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: #5595E8;
+}
+.backbone{
+    max-width: 663px;
+    padding: 50px 30px 20px ;
+}
+.backbone>h2{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #85B3EF;
+}
+.backbone>p{
+    font-size: 1rem;
+    color: white;
+    margin: 40px 0;
+    line-height: 2;
+    font-weight: 100;
+}
+.numbers{
+    max-width: 100%;
+    display: flex;
+    gap: 50px;
+    margin:100px 36px 20px 32px;
+    color: white;
+}
+.numberBox>h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.numberBox>p{
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 30px;
+    line-height: 1.4;
+    font-weight: 100;
+}
+.services{
+    background: #EDF4FD;
+    padding: 50px 0 240px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.servicesHeading>h2{
+    font-size: 3.7rem;
+    color: #5595E8;
+    text-align: center;
+}
+.servicesHeading>p{
+    margin: 25px 310px;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+.servicebg{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FA9746;
+    margin: 220px 0 0 0;
+}
+.serviceComtainer{
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    position: absolute;
+    left: 200px;
+    bottom: 83px;
+}
+.servicesCard{
+    height: 500px;
+    width: 300px;
+    background: white;
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+.servicesCard>img{
+    height: 170px;
+    width: 250px;
+
+}
+.servicesCard>h4{
+    font-size: 1.9rem;
+    color: #85B3EF;
+}
+.servicesCard>p{
+    padding: 0 20px;
+    text-align: center;
+}
+#btn3,#btn4,#btn5{
+    background: #FA9746;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.businessModels{
+    background-color: #5595E8;
+}
+.businessModels>div{
+    max-width: 1349px;
+    display: flex;
+    justify-content: space-between;
+    padding:80px 50px;
+}
+.pymentHeading{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.pymentHeading>h2{
+    font-size: 3.9rem;
+    color: #85B3EF;
+    line-height: 1.2;
+    padding-right: 50px;
+}
+.pymentHeading>p{
+    font-size: 1rem;
+    line-height: 2;
+    color: white;
+    padding-right :120px;
+    margin: 30px 0; 
+}
+.companyNames{
+    margin: 200px 20px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,33.333%);
+    place-items: center;
+}
+.companyNames>div{
+    height: 60px;
+    width: 180px;
+}
+.companyNames>div>img{
+    height: 50px;
+    width: 140px;
+}
+#btn6{
+    height: 50px;
+    width: 210px;
+    display: grid;
+    place-items: center;
+}
+.features{
+    background-color: #EDF4FD;
+}
+.features>div{
+    max-width: 1349px;
+    padding: 70px 30px;
+    margin: auto;
+}
+.includeHeading>h2{
+    font-size: 3.8rem;
+    color: #5595E8;
+    text-align: center;
+}
+.includeHeading>p{
+    font-size: 1.1rem;
+    margin:50px 0 30px;
+    text-align: center;
+}
+.featuresHeading{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.featuresHeading>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.featuresHeading>div>ul{
+    list-style-type: '\2714\0020';
+    margin: 0 0 0 20px;
+}
+.featuresHeading>div>ul>li{
+    padding-left: 8px;
+    line-height: 1.6;
+}
+.iconsBox{
+    height: 60px;
+    width: 60px;
+    background-color:#5595E8;
+}
+.featuresHeading>div>h4{
+    font-size: 1.51rem;
+    color: #5595E8;
+    margin: 20px 0 0 0;
+}
+.featuresHeading>div>a{
+    text-decoration: none;
+    color:#85B3EF;
+    padding:0 0 3px 0 ;
+    border-bottom: 2px solid #5595E8;
+    text-transform: uppercase;
+    margin:  0 0 30px 0;
+}
+.Do{
+    display: flex;
+    padding: 50px 0px;
+    background-color: #5595E8;
+}
+.Do>div{
+    text-align: center;
+}
+.Do>div>h2{
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #85B3EF;
+    letter-spacing: 2px;
+}
+.Do>div>p{
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: 20px 5px 50px ;
+}
+.Do>div>img{
+    height: 500px;
+    width: 900px;
+}
+.work{
+    display: flex;
+    gap: 30px;
+    margin: 50px 0 20px 0;
+}
+.work>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0 10px 30px 20px;
+    text-align: left;
+}
+.work>div>h4,.work>div>p,.work>div>a{
+    margin: 20px 0;
+}
+.work>div>h4{
+    font-size: 1.52rem;
+    font-weight: 700;
+    color: #FA9746;
+}
+.work>div>p{
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.work>div>a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FA9746;
+}
+.Development,.Consulting{
+    border: 12px solid wheat;
+}
+.Mobility,.SEO{
+    border: 12px solid #FA9746;
+}
+.solution>div{
+    text-align: center;
+}
+.solution>div>img{
+    height: 380px;
+}
+.solution>div>h2{
+    font-size: 3.8rem;
+    color: #5595E8;
+    margin: 30px 0;
+}
+.solution>div>p{
+    font-size: 1.6rem;
+    padding: 0 331px;
+    margin-bottom: 80px;
+}
+.solution>div>a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 30px ;
+    background-color: #FA9746;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    &:hover{
+       background-color: lightblue;
+       color: #5595E8;
+    }
+}
+.getTouch{
+    margin-top: 130px;
+    background-color: #5595E8;
+}
+.communitaionbg{
+    width: 96%;
+    height: 250px;
+    background-color: white;
+}
+
+i{
+    font-size: 4rem;
+    color: #5595E8;
+}
+.communitaionIcon{
+    width: 82%;
+    position: relative;
+}
+.communitaionIcon>div{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    position: absolute;
+    top: -140px;
+    left: 120px;
+    gap: 15px;
+}
+.communitaionIcon>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EDF4FD;
+    height: 250px;
+    width: 260px;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+.communitaionIcon>div>div>h5{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #85B3EF;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+.communitaionIcon>div>div>p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.communitaionIcon>div>div>a{
+    color:#5595E8;
+    margin: 20px 0 0 0;
+}
+.contact{
+    padding: 70px 30px 100px;
+    display: flex;
+}
+.contact>div{
+    max-width: 50%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding:70px 50px;
+}
+.socialLink>h3{
+    font-size: 2.2515rem;
+    font-weight: 700;
+    color: white;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 15px 0 8px 0 ;
+}
+.socialLink>h6{
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+}
+.socialLink>p{
+    line-height: 2;
+    font-size: 1.1rem;
+    color: white;
+    margin: 35px 0;
+}
+.socialLink>div{
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+.linkIcon{
+    font-size: 2.2rem;
+    color: white;
+}
+label{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+}
+form>div{
+    margin-top: 30px;
+}
+input{
+    background-color:transparent;
+    border: none;
+    height: 60px;
+    color: white;
+    font-size: 1.27rem;
+    width: 430px;
+    padding-left: 20px;
+    border-bottom: 2px solid white;
+    &::placeholder{
+        color:#85B3EF;
+        font-size: 1.26rem;
+    }
+}
+#userMess{
+    max-width: 430px;
+    max-height: 300px;
+    min-height: 100px;
+    min-width: 430px;
+    background-color:transparent;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.27rem;
+    height: 100px;
+    &::placeholder{
+        color: #85B3EF;
+        font-size: 1.26rem;
+    }
+}
+#submitBtn{
+    padding: 10px 184px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#5595E8;
+    border: none;
+}
+
+footer>div{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #333333;
+}
+footer>div>p{
+    padding: 0 447px;
+    text-align: center;
+    line-height: 1.7;
+    color: white;
+}
+.footerLink>a{
+    color: lightblue;
+    &:hover{
+        color:#4d4a4a;
+        text-decoration: none;
+    }
+}
+.footerLink>span{
+    color: white;
+    margin: 0 3px;
+}
+
+@media only screen and (min-width:350px) and (max-width:500px) {
+    
+    nav{
+        padding: 10px 20px;
+    }
+    .introduction>div>img{
+        height: 180px;
+        padding: 0 20px 0 0;
+    }
+    .itcompany{
+        left: 0;
+        top: 0;
+        padding: 20px;
+    }
+    .itcompany>h1{
+        font-size: 3rem;
+    }
+    .backbone{
+        padding-top: 100px;
+    }
+    .numbers{
+        flex-direction: column;
+    }
+    .services{
+        padding: 0;
+    }
+    .servicesHeading>h2{
+        font-size: 2.3rem;
+        word-spacing: 5px;
+    }
+    .servicesHeading>p{
+        margin:20px 30px;
+    }
+    .servicebg{
+        margin-top: 120px;
+    }
+    .serviceComtainer{
+        grid-template-columns: 100%;
+        position: relative;
+        left: 0;
+        bottom: 280px;
+    }
+    .pymentHeading {
+        width:auto;
+        flex-direction: column;
+    }
+    .businessModels>div {
+        flex-direction: column;
+        padding: 80px 20px;
+    }
+    .pymentHeading>h2{
+        padding: 0;
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .pymentHeading>p{
+        padding: 0;
+        font-size: 16px;
+        margin-bottom: 70px;
+        line-height: 1.4;
+    }
+    .companyNames {
+        margin: 95px 0 0 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 11px;
+    }
+    .featuresHeading{
+        grid-template-columns: 100%;
+    }
+    .Do>div>img{
+        height: 200px;
+        width: 300px;
+    }
+    .work{
+        flex-direction: column;
+    }
+    .solution>div>img{
+        height: 160px;
+        margin-top: 20px;
+    }
+    .solution>div>h2{
+        font-size: 2rem;
+    }
+    .solution>div>p{
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+    .communitaionbg{
+        width: 65%;
+    }
+    .communitaionIcon{
+        width: 62%;
+    }
+    .communitaionIcon>div{
+        grid-template-columns: 100%;
+        position: relative;
+        left: 80px;;
+
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact>div {
+        max-width:100%;
+        flex-direction: column;
+        padding: 70px 0px;
+    }
+    input{
+        width: 280px;
+    }
+    #userMess{
+        max-width: 300px;
+        max-height: 300px;
+        min-height: 100px;
+        min-width: 280px;
+    }
+    #submitBtn{
+        padding: 12px 115px;
+    }
+    footer>div>p{
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .footerLink>a{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:900px) { 
+    
+    .introduction>div>img{
+        height: 270px;
+    }
+    .itcompany{
+        left: 115px;
+        top:0;
+    }
+    .services{
+        padding: 0;
+    }
+    .servicesHeading>p{
+        margin: 25px 45px;
+    }
+    .serviceComtainer{
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        top: -383px;
+        left: 0;
+    }
+    .businessModels>div{
+        flex-direction: column;
+    }
+    .pymentHeading{
+        width: 100%;
+    }
+    .companyNames{
+        margin-top: 70px;
+    }
+    .featuresHeading{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 70px;
+    }
+    .Do>div>img{
+        height: 420px;
+        width: 700px;
+    }
+    .work{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 50px 40px;
+    }
+    .solution>div>img{
+        height: 300px;
+        margin-top: 30px;
+    }.solution>div>p{
+        padding: 0;
+    }
+    .communitaionIcon{
+        width: 36%;
+    }
+    .communitaionIcon>div>div{
+        width: 300px;
+    }
+    .communitaionIcon>div{
+        position: relative;
+        grid-template-columns:repeat(2,1fr);
+        left: 70px;
+    }
+    .contact{
+        flex-direction: column  ;
+    }
+    .contact>div{
+        max-width: 100%;
+    }
+    footer>div>p{
+        padding: 0 162px;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    .introduction>div>img{
+        height: 315px;
+    }
+    .itcompany{
+        left:437px;
+        top:-30px;
+    }
+    .serviceComtainer{
+        left: 10px;
+    }
+    .communitaionbg{
+        width: 93%;
+    }
+    .communitaionIcon>div{
+        left: 89px;
+    }
+    .communitaionIcon>div>div{
+        width: 213px;
+    }
+    .communitaionIcon>div>div>h5{
+        font-size: 1.3rem;
+    }
+}
