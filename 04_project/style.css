@@ -1,0 +1,1211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+section{
+    background-color: #F2F2F2;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    max-width: 1349px;
+    margin: auto;
+}
+#menuList{
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+#clsoeIcon{
+    margin: 50px 0 0 200px;
+}
+.hidden{
+    position: absolute;
+    top: 0;
+    left: -301px;
+    transition: left 0.7s ease-in-out;
+}
+.show{
+    left: 0;
+}
+
+#menuList>ul{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    font-size: 1.24rem;
+}
+#menuList>ul>li>a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.learnMore{
+    height: 56px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    background-color: #E8662B;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+
+    &:hover{
+        background-color: #37638D;
+    }
+}
+.introduction{
+    padding-bottom: 130px;
+}
+.backgroundcol>div,.backgroundcol>img{
+    position: relative;
+}
+.backgroundcol{
+    height: 1300px;
+    max-width: 1349px;
+    margin: auto;
+    width: 360px;
+    background-color: #E8662B;
+}
+.aboutHeading{
+    height: 400px;
+    width: 600px;
+    text-align: left;
+    background-color: #394D60;
+    color: white;
+    letter-spacing: 2px;
+    padding: 30px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 100px;
+    right: 420px;
+    z-index: 1;
+}
+.aboutHeading>h5{
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.aboutHeading>h1{
+    font-size:3.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+.backgroundcol>img{
+    height: 590px;
+    width: 730px;
+    left: 80px;
+    bottom: 50px;
+}
+.intro_Overview{
+    width: 1100px;
+    margin: 0 50px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+    bottom: 100px;
+    right: 423px;
+}
+.overviewCard{
+    height: 330px;
+    width: 250px;
+    padding: 20px 40px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 7px 8px 24px 0 rgba(0, 0, 0, 0.5);
+}
+.svgIcon{
+    height: 60px;
+    width: 60px;
+    background-color: aqua;
+}
+.overviewCard>h6{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.overviewCard>p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.7;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+.trussSystem>div{
+    max-width: 1349px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 90px 130px;
+}
+.trussSystem>div>h2{
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+.trussSystem>div>p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin:35px 140px;
+    line-height: 1.8;
+}
+.mission_strategy{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.about,.mission,.strategy{
+    height: 370px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 39px;
+    color: white;
+}
+.about{
+    background-color: #E8662B;
+}
+.strategy{
+    background-color: #394D60;
+}
+.mission{
+    background-color: white;
+    color: black;
+}
+.mission_strategy>div>h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.mission_strategy>div>p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-weight: 100;
+    line-height: 1.8;
+}
+.trussSystemimg1{
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c1d380300c5153ab8cd2d608/worker-with-hard-hat-hammer-building-house_23-2148748857.jpg");
+    background-position: 0 -113px;
+    background-size: cover;
+}
+.trussSystemimg2{
+    background-image: url("https://img.freepik.com/free-photo/construction-worker-sanding-down-wood-piece_23-2148748861.jpg");
+    background-size: cover;
+}
+.trussSystemimg3{
+    background-image: url("https://img.freepik.com/free-photo/construction-worker-sanding-down-wood-piece_23-2148748861.jpghttps://images01.nicepage.com/c461c07…/2f7cb96…/carpenter-man-working-wood_23-2148748789.jpg");
+    background-size: cover;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.experience>div{
+    max-width: 1349px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px 50px;
+    gap: 30px;
+}
+.experience>div>div{
+    display: flex;
+    flex-direction: column;
+    padding:20px 0 50px 50px;
+}
+.experience>div>div>h6{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.experience>div>div>p{
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.experiencePart1>h6{
+    margin:20px 20px 0px 100px;
+}
+.experiencePart1>p{
+    margin: 20px 0 30px 100px;
+}
+.experiencePart1>div{
+    height: 170px;
+    width: 275px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ47sNj6AK5cI855Ka0y5ctjfi_vQrs8vzs1hjjxoimjO80rL");
+    margin: 0 0 40px 0;
+}
+.experiencePart2>img{
+    margin: 0 0 100px 120px;
+}
+.experiencePart2>h6{
+    margin: 0 0 30px 0;
+}
+#part1para2{
+    margin: 0 0 30px;
+}
+#part1para2>a{
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+.experience>div>div>ul{
+    list-style-type:none;
+}
+.experience>div>div>ul>li::before{
+    content:'\2714\0020';
+    color: #E8662B;
+    padding-right: 10px;
+}
+.experience>div>div>ul>li{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+/* +++++++++++++++++++++++++++++++++++++ */
+.team{
+    width: 50%;
+    margin-left: 0;
+    height: 1200px;
+    background-color: #E8662B;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.teamImg1{
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin: 80px auto 0 calc(((100vw - 1240px) / 2));
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e0c06604cf405273a21f391a/fddffy.jpg");
+    background-size: cover;
+}
+.teamImg2{
+    height: 555px;
+    width: 555px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 276px auto 0 calc(((100% - 630px) / 2));
+    background-image: url("	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/8f49101b1c40520aafb1525a/fgg.jpg");
+    background-size: cover;
+}
+.teamImg3{
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    margin: 700px auto 0 calc(((100% - 1190px) / 2));
+    background-image: url("	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e16bb20aeb0a5c47a634de6f/kll.jpg");
+    background-size: cover;
+}
+.teamImg4{
+    height: 370px;
+    width: 515px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 30px;
+    background-color: #394D60;
+    color: white;   
+    margin: 704px auto 0 calc(((100% - 480px) / 2));
+}
+.teamImg4>h2{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.teamImg4>p{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.teamImg4>a{
+    padding: 9px 0;
+    text-decoration: none;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: transparent;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+#teamImg4.teamImg4para2{
+    font-size: 1.2rem;
+    word-spacing:4px;
+}
+#teamImg4.teamImg4para2>a{
+    margin-left:8px;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    color: white;
+    &:hover{
+        border: none;
+        opacity: 0.8;
+    }
+}
+.div5{
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    background-image: url("	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/d4234c4847045f1686ad5437/hg.jpg");
+    background-size: cover;
+    margin: 80px auto 0 calc(((100% - 480px) / 2));
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Department-Heads{
+    display: grid;
+    grid-template-rows: 360px 400px;
+    padding-top: 30px;
+}
+.backgroundFiller{
+    background-color: #E8662B;
+}
+.roleOverview{
+    max-width: 1349px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap: 30px;
+    margin: auto;
+    padding:0 100px;
+}
+.roleOverview>div{
+    position: relative;
+    z-index: 1;
+    height: 425px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding: 30px 50px;
+    background-color: white;
+}
+#Department2{
+    position: relative;
+    top: 209px;
+}
+.headImg{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-radius: 50%;
+}
+.headImg1{
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/41331264f4485f01ac2cbc0e/Untitled-1.jpg?version=");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.headImg2{
+    background-image: url("https://images02.nicepage.com/c461c07a441a5d220e8feb1a/428a9a5ba2a652249d725203/ggg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.headImg3{
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/010ac69339d65642bb487735/sdasd.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.roleOverview>div>p{
+    font-size: 1.125rem;
+    padding: 0 16px;
+    font-weight: 300;
+}
+.roleOverview>div>h6{
+    font-size: 18px;
+    font-weight: 300;
+}
+.roleOverview>div>h6>span{
+    font-weight: 700;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+.wooden-structures{
+    background-color:white;
+}
+.backgroundFiller2{
+    height: 580px;
+    background-color: #E8662B;
+}
+.wooden-design{
+    max-width: 1140px;
+    min-width: 399px;
+    height: 1040px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    align-items:baseline;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    bottom: 262px;
+    background-color:#F2F2F2;
+}
+.wooden-design>img{
+    height: 660px;
+    width: 860px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    bottom: 240px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+}
+.wooden-design>div>h2{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 90px 161px 20px;
+    text-align: center;
+}
+.wooden-design>div>p{
+    margin: 40px 105px 60px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.wooden-design>div>a{
+    margin: 0 506px;
+}
+#wooden-designPara2{
+    font-size: 1.1rem;
+}
+#wooden-designPara2>a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    padding: 0 0 2px 3px;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++ */
+.project{
+    background-color: white;
+}
+.project>div{
+    max-width: 1349px;
+    padding: 0 90px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:37% 21% 28%;
+    column-gap: 70px;
+    position: relative;
+    bottom: 80px;
+}
+.project>div>div>h2{
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+.project>div>div>p{
+    font-size: 1rem;
+    line-height: 2;
+}
+.project>div>div>a{
+    margin: 40px 0 0;
+
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+.contact>div{
+    max-width: 1140px;
+    height: 570px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.contactSectionImg{
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c7e5d856c09152869fe219d2/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_14.jpg");
+    background-size: cover;
+}
+.contactForm{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm>input{
+    height: 60px;
+    width: 360px;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid slategray;
+    font-size:1.5rem;;
+
+    &::placeholder{
+        font-size: 1rem;
+        color: slategray;
+    }
+}
+.contactForm>textarea{
+    max-height: 100px;
+    max-width: 350px;
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid slategray;
+    padding-left: 20px;
+
+    font-size: 1.5rem;
+    margin: 20px 0 50px;
+    &::placeholder{
+        color: slategray;
+        font-size: 1rem;
+    }
+}
+#formBtn{
+    height: 50px;
+    width: 90%;
+    background-color: #E8662B;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: #333333;
+    }
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: white;
+    padding: 20px 50px;
+    margin: 20px auto;
+
+}
+.detail>h6{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #E8662B;
+    margin: 30px 0;
+}
+.detail>p,.detail>ul>li{
+    line-height: 1.8;
+}
+.detail>ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+.detail>ul>li::before{
+    content: '\2714\0020';
+    color:black;
+    padding-right: 10px;
+}
+footer>div{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #333333;
+}
+footer>div>p{
+    padding: 0 447px;
+    text-align: center;
+    line-height: 1.7;
+    color: white;
+}
+.footerLink>a{
+    color: lightblue;
+    &:hover{
+        color:#4d4a4a;
+        text-decoration: none;
+    }
+}
+.footerLink>span{
+    color: white;
+    margin: 0 3px;
+}
+
+
+@media only screen and (min-width:400px) and (max-width:500px){
+    nav{
+        padding: 10px;
+    }
+    .backgroundcol{
+        height: 1760px;
+        width: 230px;
+    }
+    .aboutHeading{
+        height: 310px;
+        width: 336px;
+        letter-spacing: normal;
+        right: 46px;
+        padding: 30px 16px;
+    }
+    .aboutHeading>h1{
+        font-size: 2.25em;
+    }
+    .backgroundcol>img{
+        height: 257px;
+        width: 257px;
+        left: 58px;
+        bottom: -70px;
+    }
+    .intro_Overview{
+        width: 317px;
+        row-gap: 25px;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 0;
+        right: 95px;
+        top: 30px;
+    }
+    .overviewCard{
+        height: 268px;
+        width: 300px;
+        padding: 20px;
+    }
+    .trussSystem>div{
+        padding: 0;
+    }
+    .trussSystem>div>h2{
+        font-size: 2rem;
+    }
+    .trussSystem>div>p{
+        line-height: 1.5;
+        margin:35px 22px;
+    }
+    .mission_strategy{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .about,.mission,.strategy{
+        margin: auto;
+    }
+    .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
+        height: 100%;
+        width: 94%;
+        margin: auto;
+    }
+    .experience>div{
+        grid-template-columns: 100%;
+    }
+    .experience>div>div>h6{
+        margin: 0 0 50px; 
+    }
+    .experience>div>div>p{
+        margin: 0 0 50px;
+    }
+    .experience>div>div{
+        padding: 30px 0;
+    }
+    .experiencePart2>img{
+        margin: 0 0 60px 0;
+        height: 219px;
+        width: 300px;
+    }
+    .teamImg1{
+        height: 238px;
+        width: 238px;
+        margin: 213px auto 0 calc(((100% - 118px) / 2));
+    }
+    .teamImg2{
+        height: 271px;
+        width: 271px;
+        margin: 360px auto 0 calc(((100% - 268px) / 2));
+    }
+    .teamImg3{
+        height: 190px;
+        width: 190px;
+        margin: 555px auto 0 calc(((100% - 312px) / 2));
+        
+    }
+    .teamImg4{
+        height: 425px;
+        width: 300px;
+        gap: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+        z-index: 2;
+        margin: 721px auto 0 calc(((100% - 600px) / 2));
+
+    }
+    .div5{
+        height: 201px;
+        width: 201px;
+        margin: 80px auto 0 calc(((100% - 337px) / 2));
+    }
+    .Department-Heads{
+        grid-template-rows: 539px 390px; 
+    }
+    .roleOverview{
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+    .roleOverview>div{
+        height: 290px;
+        width: 320px;
+        padding: 0;
+        gap: 30px;
+    }
+    #Department2{
+        top: 0;
+    }
+    .wooden-structures{
+        max-height  : 1350px;
+    }
+    .wooden-design{
+        max-width:350px;
+        min-width: 350px;
+        height: 942px;
+        grid-template-rows: 25% 75%;
+        bottom: 278px;
+    }
+    .wooden-design>div{
+        max-width: 399px;
+    }
+    .wooden-design>img{
+        height: 248px;
+        width: 276px;
+        bottom: 104px;
+    }
+    .wooden-design>div>h2{
+        font-size:2.25rem;
+        margin: 0 25px 40px;
+    }
+    .wooden-design>div>p,.wooden-design>div>a{
+        margin:0 32px 35px;
+    }
+    .project>div{
+        padding: 0 46px 30px;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        bottom: 0;
+    }
+    .contact>div{
+        height: auto;
+        grid-template-columns: 100%;
+        padding-bottom: 30px;
+    }
+    .contactForm>input,.contactForm>textarea{
+        max-width: 300px;
+        width: 300px;
+        margin: 20px auto;
+    }
+    .contactSectionImg{
+        height: 360px;
+        width: 303px;
+        margin: 20px auto 0;
+    }
+    #formBtn{
+        width: 300px;
+        margin: 20px auto;
+    }
+    footer>div{
+        height: 200px;
+    }
+    footer>div>p{
+        padding: 0 19px;
+    }
+    .footerLink{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:900px){
+    nav{
+        padding: 10px;
+    }
+    .backgroundcol{
+        height: 1550px;
+        width: 300px;
+        margin: 0 0 0 80px;
+    }
+    .aboutHeading{
+        height: 280px;
+        width: 400px;
+        letter-spacing: normal;
+        right: 50px;
+        padding: 30px 16px;
+    }
+    .aboutHeading>h1{
+        font-size: 2.25em;
+    }
+    .backgroundcol>img{
+        height: 404px;
+        width: 494px;
+        left: 58px;
+        bottom: -70px;
+    }
+    .intro_Overview{
+        width: 317px;
+        row-gap: 25px;
+        grid-template-columns:repeat(2,1fr);
+        right: 95px;
+        top: 30px;
+    }
+    .overviewCard{
+        height: 380px;
+        width: 250px;
+        padding: 20px;
+    }
+    .trussSystem>div{
+        padding: 0;
+    }
+    .trussSystem>div>h2{
+        font-size: 2rem;
+    }
+    .trussSystem>div>p{
+        line-height: 1.5;
+        margin:35px 22px;
+    }
+    .mission_strategy{
+        grid-template-columns: 100%;
+    }
+    .about,.mission,.strategy{
+        margin: auto;
+        height: 230px;
+        width: 540px;
+        gap: 18px;
+        line-height: 1.4;
+    }
+    .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
+        height: 530px;
+        width: 540px;
+        margin: auto;
+    }
+    .experience>div{
+        grid-template-columns: 100%;
+    }
+    .experience>div>div>h6{
+        margin: 0 0 50px; 
+    }
+    .experience>div>div>p{
+        margin: 0 0 50px;
+    }
+    .experience>div>div{
+        padding: 30px 0;
+    }
+    .experiencePart2>img{
+        margin: 0 0 60px 282px;
+        height: 219px;
+        width: 300px;
+    }
+    .teamImg1{
+        height: 238px;
+        width: 238px;
+        margin: 213px auto 0 calc(((100% - 0px) / 2));
+    }
+    .teamImg2{
+        height: 271px;
+        width: 271px;
+        margin: 360px auto 0 calc(((100% - 141px) / 2));
+    }
+    .teamImg3{
+        height: 190px;
+        width: 190px;
+        margin: 555px auto 0 calc(((100% - 312px) / 2));
+        
+    }
+    .teamImg4{
+        height: 369px;
+        width: 448px;
+        gap: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+        z-index: 2;
+        margin: 721px auto 0 calc(((100% - 600px) / 2));
+
+    }
+    .div5{
+        height: 201px;
+        width: 201px;
+        margin: 80px auto 0 calc(((100% - 337px) / 2));
+    }
+    .Department-Heads{
+        grid-template-rows: 539px 390px; 
+    }
+    .roleOverview{
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+    .roleOverview>div{
+        height: 265px;
+        width: 540px;
+        padding: 0;
+        gap: 30px;
+    }
+    #Department2{
+        top: 0;
+    }
+    .wooden-structures{
+        max-height  : 1115px;
+    }
+    .wooden-design{
+        max-width:620px;
+        min-width: 620px;
+        height: 742px;
+        grid-template-rows: 25% 75%;
+        bottom: 278px;
+    }
+    .wooden-design>div{
+        max-width: 590px;
+        padding: 50px 0;
+    }
+    .wooden-design>img{
+        height: 360px;
+        width: 490px;
+        bottom: 204px;
+    }
+    .wooden-design>div>h2{
+        font-size:2.25rem;
+        margin: 0 25px 40px;
+    }
+    .wooden-design>div>p,.wooden-design>div>a{
+        margin:0 32px 35px;
+    }
+    .project>div{
+        padding: 0 46px 30px;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        bottom: 0;
+    }
+    .contact>div{
+        height: auto;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding-bottom: 30px;
+    }
+    .contactForm>input,.contactForm>textarea{
+        max-width: 300px;
+        width: 300px;
+        margin: 20px auto;
+    }
+    .contactSectionImg{
+        height: 360px;
+        width: 303px;
+        margin: 20px auto 0;
+    }
+    #formBtn{
+        width: 300px;
+        margin: 20px auto;
+    }
+    footer>div{
+        height: 200px;
+    }
+    footer>div>p{
+        padding: 0 19px;
+    }
+    .footerLink{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    nav{
+        padding: 20px;
+    }
+    .backgroundcol{
+        height: 1550px;
+        width: 510px;
+        margin: 0 0 0 80px;
+    }
+    .aboutHeading{
+        height: 310px;
+        width: 475px;
+        letter-spacing: normal;
+        right: 50px;
+        padding: 20px;
+    }
+    .aboutHeading>h1{
+        font-size: 3.25em;
+    }
+    .backgroundcol>img{
+        height: 474px;
+        width: 600px;
+        left: 212px;
+        bottom: -70px;
+    }
+    .intro_Overview{
+        width: 317px;
+        row-gap: 25px;
+        grid-template-columns:repeat(2,1fr);
+        right: 95px;
+        top: 30px;
+    }
+    .overviewCard{
+        height: 308px;
+        width: 341px;
+        padding: 20px 40px;
+    }
+    .trussSystem>div{
+        padding: 0;
+    }
+    .trussSystem>div>h2{
+        font-size: 3rem;
+    }
+    .trussSystem>div>p{
+        line-height: 1.5;
+        margin:35px 92px;
+    }
+    .mission_strategy{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 30px;
+        column-gap: 0;
+    }
+    .about,.mission,.strategy{
+        margin: auto;
+        height: 530px;
+        width: 440px;
+        gap: 18px;
+        line-height: 1.4;
+    }
+    .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
+        height: 530px;
+        width: 440px;
+        margin: auto;
+    }
+    .experience>div{
+        grid-template-columns: 50% 50%;
+    }
+    .experience>div>div>h6{
+        margin: 0 0 50px; 
+    }
+    .experience>div>div>p{
+        margin: 0 0 50px;
+    }
+    .experience>div>div{
+        padding: 30px 0;
+    }
+    .experiencePart2>img{
+        margin: 0 0 60px 144px;
+        height: 219px;
+        width: 300px;
+    }
+    .team{
+        height: 1300px;
+    }
+    .teamImg1{
+        height: 338px;
+        width: 338px;
+        margin: 140px auto 0 calc(((100% - 0px) / 2));
+    }
+    .teamImg2{
+        height: 371px;
+        width: 371px;
+        margin: 340px auto 0 calc(((100% - 214px) / 2));
+    }
+    .teamImg3{
+        height: 290px;
+        width: 290px;
+        margin: 540px auto 0 calc(((100% - 603px) / 2));
+        
+    }
+    .teamImg4{
+        height: 469px;
+        width: 548px;
+        gap: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+        z-index: 2;
+        margin: 730px auto 0 calc(((100% - 671px) / 2));
+
+    }
+    .teamImg4>h2{
+        font-size: 3rem;
+    }
+    .div5{
+        height: 301px;
+        width: 301px;
+        margin: 39px auto 0 calc(((100% - 430px) / 2));
+    }
+    .Department-Heads{
+        grid-template-rows: 539px 280px; 
+    }
+    .roleOverview{
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .wooden-structures{
+        max-height  : 1115px;
+    }
+    .wooden-design{
+        max-width:850px;
+        min-width: 850px;
+        height: 742px;
+        grid-template-rows: 25% 75%;
+        bottom: 278px;
+    }
+    .wooden-design>div{
+        max-width: 590px;
+        padding: 50px 0;
+    }
+    .wooden-design>img{
+        height: 420px;
+        width: 640px;
+        bottom: 260px;
+    }
+    .wooden-design>div>h2{
+        font-size:2.5rem;
+        margin: 0 25px 40px;
+    }
+    .wooden-design>div>p,.wooden-design>div>a{
+        margin:0 32px 35px;
+    }
+    .project>div{
+        padding: 0 46px 30px;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        bottom: 0;
+    }
+    .contact>div{
+        height: auto;
+        grid-template-columns:repeat(2\3,1fr);
+        padding-bottom: 30px;
+    }
+    .contactForm>input,.contactForm>textarea{
+        max-width: 300px;
+        width: 300px;
+        margin: 20px auto;
+    }
+    .contactSectionImg{
+        height: 360px;
+        width: 303px;
+        margin: 20px auto 0;
+    }
+    #formBtn{
+        width: 300px;
+        margin: 20px auto;
+    }
+    footer>div{
+        height: 200px;
+    }
+    footer>div>p{
+        padding: 0 19px;
+    }
+    .footerLink{
+        font-size: 0.9rem;
+    }
+}
+
+
