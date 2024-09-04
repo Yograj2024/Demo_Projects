@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
-section{
+.section{
     background-color: #F2F2F2;
-    margin: auto;
+    padding: 0 0 100px;
+    height: auto;
 }
-nav{
+.navigetionBar{
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
@@ -16,117 +16,127 @@ nav{
     max-width: 1349px;
     margin: auto;
 }
-#menuList{
-    height: 100vh;
-    width: 300px;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
-}
 #clsoeIcon{
     margin: 50px 0 0 200px;
 }
-.hidden{
+.sideBarHide{
+    height: 100%;
     position: absolute;
     top: 0;
-    left: -301px;
-    transition: left 0.7s ease-in-out;
+    transform:translateX(-100%);
+    width: 300px;
+    z-index: 2;
+    background: black;
+    transition: transform 0.6s ease-in-out;
 }
 .show{
-    left: 0;
+    transform: translateX(0);
 }
-
-#menuList>ul{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    list-style: none;
-    font-size: 1.24rem;
+#list{
+    margin:70px 20px 0;
 }
-#menuList>ul>li>a{
+.sideBarHide .eg-anker{
+    font-size: 1.5rem;
+    font-family:  Montserrat, sans-serif;
+    margin: 0 30px;
     text-decoration: none;
     color: white;
-    text-transform: capitalize;
+    padding: 10px 20px ;
+
+    &:hover{
+        border: 2px solid yellow;
+        border-radius: 10px;
+    }
 }
-.learnMore{
-    height: 56px;
-    width: 200px;
+.sideBarHide li{
+    margin: 50px 0 0;
+}
+
+.learnMore_btn{
+    height: 50px;
+    width: 195px;
     display: grid;
     place-items: center;
     background-color: #E8662B;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.125rem;
     text-transform: uppercase;
     color: white;
     letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
 
     &:hover{
         background-color: #37638D;
     }
 }
-.introduction{
-    padding-bottom: 130px;
-}
-.backgroundcol>div,.backgroundcol>img{
+/* +++++   introduction Section  +++++ */
+
+.intro_Container{
+    max-width: 1140px;
+    height: 1177px;
+    margin: auto;
     position: relative;
 }
-.backgroundcol{
-    height: 1300px;
-    max-width: 1349px;
+
+.intro_Container .eg-colum{
+    height: 100%;
     margin: auto;
     width: 360px;
+    position: absolute;
+    margin: 0 auto 0 343px;
     background-color: #E8662B;
 }
 .aboutHeading{
-    height: 400px;
-    width: 600px;
-    text-align: left;
+    height: 350px;
+    width: 571px;
+    padding: 70px 0 0 38px;
     background-color: #394D60;
     color: white;
-    letter-spacing: 2px;
-    padding: 30px 0 30px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    top: 100px;
-    right: 420px;
+    position: absolute;
+    top: 80px;
     z-index: 1;
 }
-.aboutHeading>h5{
+.aboutHeading .eg-heading5{
     font-size: 20px;
-    font-weight: 100;
+    margin: 0 0 13px;
+    letter-spacing: 3px;
+    font-family:  Roboto, sans-serif;
+    font-weight: 300;   
     text-transform: uppercase;
 }
-.aboutHeading>h1{
-    font-size:3.4rem;
-    line-height: 1.3;
+.aboutHeading .eg-heading1{
+    font-size:4.25rem;
+    font-family: Oswald, sans-serif;;
+    line-height: 1.1;
+    margin-top: 30px;
     font-weight: 400;
 }
-.backgroundcol>img{
+.carpainterImg{
     height: 590px;
     width: 730px;
-    left: 80px;
-    bottom: 50px;
+    position: absolute;
+    top: 245px;
+    right: 0;
+}
+.carpainterImg .eg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .intro_Overview{
     width: 1100px;
-    margin: 0 50px;
-    position: relative;
+    position: absolute;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    column-gap: 30px;
-    bottom: 100px;
-    right: 423px;
+    bottom: 70px;
+    right: 40px;
 }
 .overviewCard{
-    height: 330px;
-    width: 250px;
+    height: 320px;
+    width: 260px;
     padding: 20px 40px;
     background-color: whitesmoke;
     display: flex;
@@ -139,34 +149,37 @@ nav{
     width: 60px;
     background-color: aqua;
 }
-.overviewCard>h6{
-    font-size: 1.25rem;
-    font-weight: 700;
+.overviewCard .eg-headign6{
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'PT Sans', sans-serif;
 }
-.overviewCard>p{
+.overviewCard .eg-para{
     font-size: 1rem;
-    font-weight: 400;
     font-style: italic;
-    line-height: 1.7;
+    line-height: 1.8;
+    font-family:'Open Sans', sans-serif;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++++ */
-.trussSystem>div{
-    max-width: 1349px;
+/* ++++++++   trust section   ++++++++ */
+
+.trust_Container{
+    max-width: 1140px;
     margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 90px 130px;
 }
-.trussSystem>div>h2{
-    font-size: 3.8rem;
-    font-weight: 500;
+.trust_Container .eg-heading2{
+    font-size: 3.75rem;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
 }
-.trussSystem>div>p{
+.trust_Container .eg-para{
     font-size: 1.5rem;
     font-weight: 400;
-    margin:35px 140px;
-    line-height: 1.8;
+    margin:16px 125px;
+    line-height: 1.6;
+    font-family: 'PT Sans', sans-serif;
 }
 .mission_strategy{
     display: grid;
@@ -175,12 +188,11 @@ nav{
     row-gap: 15px;
 }
 .about,.mission,.strategy{
-    height: 370px;
-    width: 380px;
+    height: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
-    padding: 39px;
+    justify-content:center;
     color: white;
 }
 .about{
@@ -193,15 +205,17 @@ nav{
     background-color: white;
     color: black;
 }
-.mission_strategy>div>h3{
-    font-size: 1.8rem;
+.mission_strategy .eg-heading3{
+    font-size: 1.875rem;
     font-weight: 400;
+    margin: 0 0 30px;
+    font-family:  Montserrat, sans-serif;
 }
-.mission_strategy>div>p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-weight: 100;
+.trust_Container .mission_strategy .eg-para{
+    font-size: 1rem;
     line-height: 1.8;
+    margin: 0 16px;
+    font-family:  'Open Sans', sans-serif;;
 }
 .trussSystemimg1{
     background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c1d380300c5153ab8cd2d608/worker-with-hard-hat-hammer-building-house_23-2148748857.jpg");
@@ -216,81 +230,111 @@ nav{
     background-image: url("https://img.freepik.com/free-photo/construction-worker-sanding-down-wood-piece_23-2148748861.jpghttps://images01.nicepage.com/c461c07…/2f7cb96…/carpenter-man-working-wood_23-2148748789.jpg");
     background-size: cover;
 }
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.experience>div{
-    max-width: 1349px;
+/*   +++++++++   exeperience section   ++++++++++ */
+
+.experience_Container{
+    max-width: 1140px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 30px 50px;
-    gap: 30px;
 }
-.experience>div>div{
+.experience_Container .eg-right,
+.experience_Container .eg-left {
     display: flex;
     flex-direction: column;
-    padding:20px 0 50px 50px;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.experience>div>div>h6{
-    font-size: 1.2rem;
-    line-height: 1.3;
+.experience_Container .eg-right .eg-heading6,
+.experience_Container .eg-left .eg-heading6{
+    font-size: 1.125rem;
+    line-height: 1.2;
     letter-spacing: 2px;
     font-weight: 700;
+    font-family:  Montserrat, sans-serif !important;
 }
-.experience>div>div>p{
-    line-height: 1.8;
-    font-size: 1.1rem;
-    text-align: justify;
+.experience_Container .eg-right .eg-heading6{
+    margin: 0 0 0 82px;
 }
-.experiencePart1>h6{
-    margin:20px 20px 0px 100px;
+.experience_Container .eg-left .eg-heading6{
+    margin: 96px 0 0 ;
 }
-.experiencePart1>p{
-    margin: 20px 0 30px 100px;
-}
-.experiencePart1>div{
-    height: 170px;
-    width: 275px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ47sNj6AK5cI855Ka0y5ctjfi_vQrs8vzs1hjjxoimjO80rL");
-    margin: 0 0 40px 0;
-}
-.experiencePart2>img{
-    margin: 0 0 100px 120px;
-}
-.experiencePart2>h6{
-    margin: 0 0 30px 0;
-}
-#part1para2{
-    margin: 0 0 30px;
-}
-#part1para2>a{
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 2px;
-}
-.experience>div>div>ul{
-    list-style-type:none;
-}
-.experience>div>div>ul>li::before{
-    content:'\2714\0020';
-    color: #E8662B;
-    padding-right: 10px;
-}
-.experience>div>div>ul>li{
+.experience_Container .eg-para{
     font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+.experience_Container h6+.eg-para{
+    margin: 20px 0 0 82px;
+}
+.experience_Container .eg-rightImg{
+    height: 206px;
+    width: 250px;
+    margin: 20px 0 0;
+}
+.experience_Container .eg-rightImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.experience_Container div+.eg-para{
+    margin: 35px auto 0;
+}
+.experience_Container .eg-para a{
+    color: black;
+    margin-left: 5px;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;;
+    border-bottom: 1px solid black;
+}
+.experience_Container .eg-right a{
+    margin-top: 20px;
+}
+.experience_Container .eg-leftImg{
+    height: 230px;
+    width: 340px;
+    margin: 15px 0 0 150px;
+}
+.experience_Container .eg-leftImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.experience_Container .eg-left ul{
+    margin: 20px 0 0;
+    list-style-type: none;
     line-height: 1.8;
 }
-/* +++++++++++++++++++++++++++++++++++++ */
+.experience_Container .eg-left ul li::before{
+    content: '\2714\0020';
+    color: #E8662B;
+    margin-right: 10px;
+}
+.experience_Container .eg-left ul li{
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*     ++++++++++   Team Section   */
 .team{
+    padding: 0;
+}
+.team_Container{
     width: 50%;
     margin-left: 0;
     height: 1200px;
     background-color: #E8662B;
     display: grid;
+    font-family: 'Open Sans', sans-serif;
     grid-template-columns: repeat(5,1fr);
 }
-.teamImg1{
+.team_Container .img1{
     height: 375px;
     width: 375px;
     border-radius: 50%;
@@ -299,7 +343,7 @@ nav{
     background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e0c06604cf405273a21f391a/fddffy.jpg");
     background-size: cover;
 }
-.teamImg2{
+.team_Container .img2{
     height: 555px;
     width: 555px;
     border-radius: 50%;
@@ -308,7 +352,7 @@ nav{
     background-image: url("	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/8f49101b1c40520aafb1525a/fgg.jpg");
     background-size: cover;
 }
-.teamImg3{
+.team_Container .img3{
     height: 375px;
     width: 375px;
     border-radius: 50%;
@@ -318,7 +362,7 @@ nav{
     background-image: url("	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e16bb20aeb0a5c47a634de6f/kll.jpg");
     background-size: cover;
 }
-.teamImg4{
+.team_Container .img4{
     height: 370px;
     width: 515px;
     display: flex;
@@ -329,16 +373,16 @@ nav{
     color: white;   
     margin: 704px auto 0 calc(((100% - 480px) / 2));
 }
-.teamImg4>h2{
+.team_Container .img4>h2{
+    font-family: "Oswald", sans-serif;
     font-size: 1.8rem;
-    letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 400;
 }
-.teamImg4>p{
+.team_Container .img4>p{
     font-size: 1rem;
     line-height: 1.8;
 }
-.teamImg4>a{
+.team_Container .img4>a{
     padding: 9px 0;
     text-decoration: none;
     width: 150px;
@@ -356,11 +400,11 @@ nav{
         color: black;
     }
 }
-#teamImg4.teamImg4para2{
+.team_Container .img4 .teamImg4para2{
     font-size: 1.2rem;
     word-spacing:4px;
 }
-#teamImg4.teamImg4para2>a{
+.team_Container .img4 .teamImg4para2>a{
     margin-left:8px;
     text-decoration: none;
     padding-bottom: 3px;
@@ -371,7 +415,23 @@ nav{
         opacity: 0.8;
     }
 }
-.div5{
+.team_Container .img4 p+.eg-anker{
+    font-size: 1rem;
+}
+.team_Container .img4 .eg-para{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+.team_Container .img4 .eg-para .eg-anker{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 0 0 7px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.team_Container .img5{
     height: 375px;
     width: 375px;
     border-radius: 50%;
@@ -380,44 +440,42 @@ nav{
     background-size: cover;
     margin: 80px auto 0 calc(((100% - 480px) / 2));
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.Department-Heads{
+
+/*   ++++++++   Department Section   ++++++++*/
+.Department{
+    padding: 0;
+}
+.department_Container{
     display: grid;
-    grid-template-rows: 360px 400px;
+    grid-template-rows: 400px 360px;
     padding-top: 30px;
 }
 .backgroundFiller{
     background-color: #E8662B;
 }
-.roleOverview{
-    max-width: 1349px;
+.cardContainer{
+    max-width: 1140px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin: auto;
-    padding:0 100px;
 }
-.roleOverview>div{
-    position: relative;
-    z-index: 1;
-    height: 425px;
+.cards{
+    height: 400px;
+    width: 325px;
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 42px;
-    padding: 30px 50px;
     background-color: white;
-}
-#Department2{
     position: relative;
-    top: 209px;
+    top: 51px;
+    padding: 30px;
 }
 .headImg{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     background-color: red;
     border-radius: 50%;
 }
@@ -431,107 +489,146 @@ nav{
     background-size: cover;
     background-position: 50% 50%;
 }
+#card2{
+    top: 221px;
+}
 .headImg3{
     background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/010ac69339d65642bb487735/sdasd.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }
-.roleOverview>div>p{
-    font-size: 1.125rem;
-    padding: 0 16px;
+.department_Container .cardContainer .cards .eg-para{
+    font-size: 1.25rem;
     font-weight: 300;
+    margin: 20px 0 0;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
 }
-.roleOverview>div>h6{
-    font-size: 18px;
-    font-weight: 300;
+.department_Container .cardContainer .cards .eg-headign6{
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    margin: 20px 0 0;
 }
-.roleOverview>div>h6>span{
+.cardContainer>div>h6>span{
     font-weight: 700;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++++ */
-.wooden-structures{
-    background-color:white;
+
+/*   ++++++++++   wooden_structures   ++++++++++   */
+
+.wooden_structures{
+    padding: 0;
+    background-color: white;
+    max-height: 1300px;
+    margin: 0 0 100px;
 }
-.backgroundFiller2{
+.structuresContainer{
+    max-width: 1140px;
+    /* height: 1040px; */
+    margin: auto;
+    background-color:#F2F2F2;
+    position: relative;
+    bottom: 386px;
+    display: grid;
+    grid-template-rows: 50% 40%;
+    row-gap: 85px;
+}
+.wooden_structures .eg-bgfiller{
     height: 580px;
     background-color: #E8662B;
 }
-.wooden-design{
-    max-width: 1140px;
-    min-width: 399px;
-    height: 1040px;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 40% 60%;
-    align-items:baseline;
-    justify-content: center;
-    z-index: 2;
-    position: relative;
-    bottom: 262px;
-    background-color:#F2F2F2;
-}
-.wooden-design>img{
+.structuresContainer .eg-img{
     height: 660px;
     width: 860px;
-    position: relative;
-    z-index: 1;
     margin: auto;
-    bottom: 240px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 114px;
 }
-.wooden-design>div>h2{
+.structuresContainer .eg-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.structuresContainer .eg-textPart{
+    /* height: 100%; */
+    width: 73%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.structuresContainer .eg-textPart .eg-heading2{
     font-size: 3rem;
     font-weight: 400;
-    line-height: 1.3;
-    margin: 90px 161px 20px;
-    text-align: center;
+    line-height: 1.1;
+    font-family:  Oswald, sans-serif;
 }
-.wooden-design>div>p{
-    margin: 40px 105px 60px;
-    font-size: 1.2rem;
-    text-align: center;
+.structuresContainer .eg-textPart h2+.eg-para{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0 0;
+    line-height: 1.8;
+    font-weight: 400;
 }
-.wooden-design>div>a{
-    margin: 0 506px;
+.structuresContainer .eg-textPart p+.eg-para{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 20px 0 0;
 }
-#wooden-designPara2{
-    font-size: 1.1rem;
-}
-#wooden-designPara2>a{
-    text-decoration: none;
+.structuresContainer .eg-textPart .eg-para a{
     color: black;
+    letter-spacing: 2px;
     text-transform: capitalize;
-    border-bottom: 1px solid black;
-    padding: 0 0 2px 3px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++ */
+.structuresContainer .eg-textPart .learnMore_btn{
+    margin: 40px auto 0;
+}
+
+/*   ++++++++++   project Section   ++++++++++   */
+
 .project{
     background-color: white;
 }
-.project>div{
+.project .projectContainer{
     max-width: 1349px;
     padding: 0 90px;
     margin: auto;
     display: grid;
-    grid-template-columns:37% 21% 28%;
-    column-gap: 70px;
-    position: relative;
-    bottom: 80px;
+    grid-template-columns:35% 25% 30%;
+    column-gap: 9px;
 }
-.project>div>div>h2{
-    font-size: 2.25rem;
+.projectContainer .eg-heading2{
     font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Oswald, sans-serif;
 }
-.project>div>div>p{
+.projectContainer .eg-para{
+    padding: 20px 0 0;
     font-size: 1rem;
     line-height: 2;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
 }
-.project>div>div>a{
-    margin: 40px 0 0;
+.projectContainer .projectCol3 .eg-para{
+    padding: 18px 0 0 40px;
+}
+.projectContainer .projectCol3 .learnMore_btn{
+    margin: 0 40px 0;
 
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++ */
-.contact>div{
+.contactContainer{
     max-width: 1140px;
     height: 570px;
     margin: auto;
@@ -541,6 +638,7 @@ nav{
 .contactSectionImg{
     background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c7e5d856c09152869fe219d2/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_14.jpg");
     background-size: cover;
+    background-position: 50% 50%;
 }
 .contactForm{
     padding-top: 30px;
@@ -607,6 +705,7 @@ nav{
     font-weight: 700;
     color: #E8662B;
     margin: 30px 0;
+    font-family:  Montserrat, sans-serif;
 }
 .detail>p,.detail>ul>li{
     line-height: 1.8;
@@ -648,51 +747,59 @@ footer>div>p{
 }
 
 
-@media only screen and (min-width:400px) and (max-width:500px){
-    nav{
+@media only screen and 
+(min-width:350px) and (max-width:600px){
+    .navigetionBar{
         padding: 10px;
     }
-    .backgroundcol{
-        height: 1760px;
+    .section{
+        padding: 0;
+    }
+    .intro_Container{
+        height: 1900px;
+    }
+    .intro_Container .eg-colum{
+        height: 1860px;
         width: 230px;
+        margin: 0 0 0 50px;
     }
     .aboutHeading{
-        height: 310px;
-        width: 336px;
+        height: 280px;
+        width: 350px;
         letter-spacing: normal;
-        right: 46px;
+        left: 25px;
         padding: 30px 16px;
     }
-    .aboutHeading>h1{
+    .aboutHeading .eg-heading1{
         font-size: 2.25em;
+        line-height: 1.3;
+        margin-top: 15px;
     }
-    .backgroundcol>img{
+    .carpainterImg{
         height: 257px;
-        width: 257px;
-        left: 58px;
-        bottom: -70px;
+        width: 286px;
+        top:340px;
     }
     .intro_Overview{
         width: 317px;
         row-gap: 25px;
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: 0;
-        right: 95px;
-        top: 30px;
+        left:30px;
+        top: 570px;
     }
     .overviewCard{
         height: 268px;
         width: 300px;
         padding: 20px;
     }
-    .trussSystem>div{
+    .trust_Container{
         padding: 0;
     }
-    .trussSystem>div>h2{
-        font-size: 2rem;
+    .trust_Container .eg-heading2{
+        font-size: 2.25rem;
     }
-    .trussSystem>div>p{
-        line-height: 1.5;
+    .trust_Container .eg-para{
         margin:35px 22px;
     }
     .mission_strategy{
@@ -700,49 +807,56 @@ footer>div>p{
         grid-template-rows: repeat(6,1fr);
     }
     .about,.mission,.strategy{
+        height: 300px;
+        width: 340px;
         margin: auto;
     }
     .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
         height: 100%;
-        width: 94%;
+        width: 340px;
         margin: auto;
     }
-    .experience>div{
+
+    .experience_Container{
         grid-template-columns: 100%;
     }
-    .experience>div>div>h6{
-        margin: 0 0 50px; 
+    .experience_Container .eg-right .eg-heading6{
+        margin: 0 0 0 20px; 
     }
-    .experience>div>div>p{
-        margin: 0 0 50px;
+    .experience_Container .eg-left .eg-heading6{
+        margin-left:20px; 
     }
-    .experience>div>div{
-        padding: 30px 0;
+    .experience_Container h6+.eg-para{
+        margin-left:20px;
     }
-    .experiencePart2>img{
-        margin: 0 0 60px 0;
-        height: 219px;
-        width: 300px;
+    .experience_Container .eg-rightImg{
+        height: 220px;
+        width: 266px;
     }
-    .teamImg1{
-        height: 238px;
-        width: 238px;
+    .experience_Container .eg-leftImg{
+        height: 218px;
+        width: 298px;
+        margin:0px;
+    }
+    .team_Container .img1{
+        height: 236px;
+        width: 236px;
         margin: 213px auto 0 calc(((100% - 118px) / 2));
     }
-    .teamImg2{
-        height: 271px;
-        width: 271px;
-        margin: 360px auto 0 calc(((100% - 268px) / 2));
+    .team_Container .img2{
+        height: 270px;
+        width: 270px;
+        margin: 360px auto 0 calc(((100% - 285px) / 2));
     }
-    .teamImg3{
-        height: 190px;
-        width: 190px;
+    .team_Container .img3{
+        height: 185px;
+        width: 185px;
         margin: 555px auto 0 calc(((100% - 312px) / 2));
         
     }
-    .teamImg4{
-        height: 425px;
-        width: 300px;
+    .team_Container .img4{
+        height: 410px;
+        width: 340px;
         gap: 15px;
         padding-left: 45px;
         padding-right: 45px;
@@ -750,59 +864,68 @@ footer>div>p{
         margin: 721px auto 0 calc(((100% - 600px) / 2));
 
     }
-    .div5{
-        height: 201px;
-        width: 201px;
+    .team_Container .img5{
+        height: 195px;
+        width: 195px;
         margin: 80px auto 0 calc(((100% - 337px) / 2));
     }
-    .Department-Heads{
+
+    .department_Container{
         grid-template-rows: 539px 390px; 
     }
-    .roleOverview{
+    .cardContainer{
         padding: 0;
         grid-template-columns: 100%;
     }
-    .roleOverview>div{
-        height: 290px;
-        width: 320px;
+    .cards{
+        height: 300px;
+        width: 300px;
         padding: 0;
-        gap: 30px;
     }
-    #Department2{
-        top: 0;
+    #card2{
+        top: 50px;
     }
-    .wooden-structures{
-        max-height  : 1350px;
+    .wooden_structures .eg-bgfiller{
+        height: 700px;
     }
-    .wooden-design{
-        max-width:350px;
-        min-width: 350px;
-        height: 942px;
+    .structuresContainer{
+        max-width:80%;
         grid-template-rows: 25% 75%;
-        bottom: 278px;
+        gap: 0;
     }
-    .wooden-design>div{
-        max-width: 399px;
+    .structuresContainer .eg-img{
+        height: 250px;
+        width: 280px;
     }
-    .wooden-design>img{
-        height: 248px;
-        width: 276px;
-        bottom: 104px;
+    .structuresContainer .eg-textPart{
+        height: 100%;
+        width: 82%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
-    .wooden-design>div>h2{
-        font-size:2.25rem;
-        margin: 0 25px 40px;
+    .structuresContainer .eg-textPart h2+.eg-para{
+        margin: 50px 0 0;
     }
-    .wooden-design>div>p,.wooden-design>div>a{
-        margin:0 32px 35px;
+    .structuresContainer .eg-textPart .learnMore_btn{
+        margin: 60px auto 0;
     }
-    .project>div{
+
+    .project .projectContainer{
         padding: 0 46px 30px;
         grid-template-columns: 100%;
         row-gap: 20px;
         bottom: 0;
     }
-    .contact>div{
+    .projectContainer .projectCol3 .eg-para{
+        padding:0;
+    }
+    .projectContainer .projectCol3 .learnMore_btn{
+        margin: 30px 40px 0;
+    
+    }
+    .contactContainer{
         height: auto;
         grid-template-columns: 100%;
         padding-bottom: 30px;
@@ -832,178 +955,201 @@ footer>div>p{
     }
 }
 
-@media only screen and (min-width:700px) and (max-width:900px){
-    nav{
+@media only screen and 
+(min-width:601px) and (max-width:800px){
+    .navigetionBar{
         padding: 10px;
     }
-    .backgroundcol{
-        height: 1550px;
-        width: 300px;
-        margin: 0 0 0 80px;
+    .section{
+        padding: 0;
+    }
+    .intro_Container{
+        height:1500px;
+    }
+    .intro_Container .eg-colum{
+        height: 1360px;
+        width: 230px;
+        margin: 0 0 0 50px;
     }
     .aboutHeading{
         height: 280px;
-        width: 400px;
+        width: 350px;
         letter-spacing: normal;
-        right: 50px;
+        left: 25px;
         padding: 30px 16px;
     }
-    .aboutHeading>h1{
+    .aboutHeading .eg-heading1{
         font-size: 2.25em;
+        line-height: 1.3;
+        margin-top: 15px;
     }
-    .backgroundcol>img{
-        height: 404px;
-        width: 494px;
-        left: 58px;
-        bottom: -70px;
+    .carpainterImg{
+        height: 300px;
+        width: 400px;
+        top:340px;
+        left: 19%;
     }
     .intro_Overview{
-        width: 317px;
+        width:500px;
         row-gap: 25px;
-        grid-template-columns:repeat(2,1fr);
-        right: 95px;
-        top: 30px;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,250px);
+        bottom: 190px;
+        left: 20px;
     }
     .overviewCard{
-        height: 380px;
-        width: 250px;
+        height: 350px;
+        width: 230px;
         padding: 20px;
     }
-    .trussSystem>div{
+    .trust_Container{
         padding: 0;
     }
-    .trussSystem>div>h2{
-        font-size: 2rem;
+    .trust_Container .eg-heading2{
+        font-size: 2.25rem;
     }
-    .trussSystem>div>p{
-        line-height: 1.5;
+    .trust_Container .eg-para{
         margin:35px 22px;
     }
     .mission_strategy{
         grid-template-columns: 100%;
+        grid-template-rows: 200px 540px;
     }
     .about,.mission,.strategy{
+        height: 200px;
+        width: 500px;
         margin: auto;
-        height: 230px;
-        width: 540px;
-        gap: 18px;
-        line-height: 1.4;
     }
     .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
-        height: 530px;
-        width: 540px;
+        height: 540px;
+        width: 500px;
         margin: auto;
     }
-    .experience>div{
+
+    .experience_Container{
         grid-template-columns: 100%;
     }
-    .experience>div>div>h6{
-        margin: 0 0 50px; 
+    .experience_Container .eg-right .eg-heading6{
+        margin: 0 0 0 20px; 
     }
-    .experience>div>div>p{
-        margin: 0 0 50px;
+    .experience_Container .eg-left .eg-heading6{
+        margin-left:20px; 
     }
-    .experience>div>div{
-        padding: 30px 0;
+    .experience_Container h6+.eg-para{
+        margin-left:20px;
     }
-    .experiencePart2>img{
-        margin: 0 0 60px 282px;
-        height: 219px;
-        width: 300px;
+    .experience_Container .eg-rightImg{
+        height: 220px;
+        width: 266px;
     }
-    .teamImg1{
-        height: 238px;
-        width: 238px;
-        margin: 213px auto 0 calc(((100% - 0px) / 2));
+    .experience_Container .eg-leftImg{
+        height: 218px;
+        width: 298px;
+        margin-left:200px;
     }
-    .teamImg2{
-        height: 271px;
-        width: 271px;
-        margin: 360px auto 0 calc(((100% - 141px) / 2));
+    .team_Container .img1{
+        height: 236px;
+        width: 236px;
+        margin: 213px auto 0 calc(((100% - 100px) / 2));
     }
-    .teamImg3{
-        height: 190px;
-        width: 190px;
-        margin: 555px auto 0 calc(((100% - 312px) / 2));
+    .team_Container .img2{
+        height: 270px;
+        width: 270px;
+        margin: 360px auto 0 calc(((100% - 100px) / 2));
+    }
+    .team_Container .img3{
+        height: 285px;
+        width: 285px;
+        margin: 555px auto 0 calc(((100% - 300px) / 2));
         
     }
-    .teamImg4{
-        height: 369px;
-        width: 448px;
+    .team_Container .img4{
+        height: 340px;
+        width: 380px;
         gap: 15px;
-        padding-left: 45px;
-        padding-right: 45px;
+        padding: 20px 30px;
         z-index: 2;
-        margin: 721px auto 0 calc(((100% - 600px) / 2));
+        margin: 721px auto 0 calc(((100% - 500px) / 2));
 
     }
-    .div5{
-        height: 201px;
-        width: 201px;
-        margin: 80px auto 0 calc(((100% - 337px) / 2));
+    .team_Container .img5{
+        height: 195px;
+        width: 195px;
+        margin: 80px auto 0 calc(((100% - 300px) / 2));
     }
-    .Department-Heads{
-        grid-template-rows: 539px 390px; 
+
+    .department_Container{
+        grid-template-rows: 480px 300px; 
     }
-    .roleOverview{
+    .cardContainer{
         padding: 0;
         grid-template-columns: 100%;
     }
-    .roleOverview>div{
-        height: 265px;
-        width: 540px;
+    .cards{
+        height: 230px;
+        width: 520px;
         padding: 0;
-        gap: 30px;
     }
-    #Department2{
-        top: 0;
+    #card2{
+        top: 50px;
     }
-    .wooden-structures{
-        max-height  : 1115px;
+    .wooden_structures .eg-bgfiller{
+        height: 700px;
     }
-    .wooden-design{
-        max-width:620px;
-        min-width: 620px;
-        height: 742px;
+    .structuresContainer{
+        max-width:92%;
         grid-template-rows: 25% 75%;
-        bottom: 278px;
+        gap: 0;
     }
-    .wooden-design>div{
-        max-width: 590px;
-        padding: 50px 0;
+    .structuresContainer .eg-img{
+        height: 350px;
+        width: 480px;
     }
-    .wooden-design>img{
-        height: 360px;
-        width: 490px;
-        bottom: 204px;
+    .structuresContainer .eg-textPart{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-    .wooden-design>div>h2{
-        font-size:2.25rem;
-        margin: 0 25px 40px;
+    .structuresContainer .eg-textPart h2+.eg-para{
+        margin: 50px 0 0;
     }
-    .wooden-design>div>p,.wooden-design>div>a{
-        margin:0 32px 35px;
+    .structuresContainer .eg-textPart .learnMore_btn{
+        margin: 60px auto 0;
     }
-    .project>div{
+
+    .project .projectContainer{
         padding: 0 46px 30px;
         grid-template-columns: 100%;
         row-gap: 20px;
         bottom: 0;
     }
-    .contact>div{
+    .projectContainer .projectCol3 .eg-para{
+        padding:0;
+    }
+    .projectContainer .projectCol3 .learnMore_btn{
+        margin: 30px 40px 0;
+    
+    }
+    .contactContainer{
         height: auto;
-        grid-template-columns:repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 100%;
         padding-bottom: 30px;
     }
     .contactForm>input,.contactForm>textarea{
-        max-width: 300px;
-        width: 300px;
+        max-width: 600px;
+        width: 500px;
         margin: 20px auto;
+    }
+    .detail{
+        width: 84%;
     }
     .contactSectionImg{
         height: 360px;
-        width: 303px;
+        width: 84%;
         margin: 20px auto 0;
     }
     #formBtn{
@@ -1021,176 +1167,205 @@ footer>div>p{
     }
 }
 
-@media only screen and (min-width:1000px) and (max-width:1200px){
-    nav{
-        padding: 20px;
+@media only screen and 
+(min-width:801px) and (max-width:1100px){
+    .navigetionBar{
+        padding: 10px;
     }
-    .backgroundcol{
-        height: 1550px;
-        width: 510px;
-        margin: 0 0 0 80px;
-    }
-    .aboutHeading{
-        height: 310px;
-        width: 475px;
-        letter-spacing: normal;
-        right: 50px;
-        padding: 20px;
-    }
-    .aboutHeading>h1{
-        font-size: 3.25em;
-    }
-    .backgroundcol>img{
-        height: 474px;
-        width: 600px;
-        left: 212px;
-        bottom: -70px;
-    }
-    .intro_Overview{
-        width: 317px;
-        row-gap: 25px;
-        grid-template-columns:repeat(2,1fr);
-        right: 95px;
-        top: 30px;
-    }
-    .overviewCard{
-        height: 308px;
-        width: 341px;
-        padding: 20px 40px;
-    }
-    .trussSystem>div{
+    .section{
         padding: 0;
     }
-    .trussSystem>div>h2{
-        font-size: 3rem;
+    .intro_Container{
+        height:1500px;
     }
-    .trussSystem>div>p{
-        line-height: 1.5;
-        margin:35px 92px;
+    .intro_Container .eg-colum{
+        height: 1360px;
+        width: 510px;
+        margin: 0 0 0 90px;
+    }
+    .aboutHeading{
+        height: 380px;
+        width: 515px;
+        letter-spacing: normal;
+        left: 25px;
+        padding: 30px;
+    }
+    .aboutHeading .eg-heading1{
+        line-height: 1.3;
+        margin-top: 15px;
+    }
+    .carpainterImg{
+        height: 474px;
+        width: 600px;
+        top:390px;
+        left: 19%;
+    }
+    .intro_Overview{
+        width:auto;
+        row-gap: 25px;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,250px);
+        bottom: 190px;
+        left: 20px;
+        column-gap: 106px;
+    }
+    .overviewCard{
+        height:252px;
+        width: 319px;
+        padding: 20px;
+    }
+    .trust_Container{
+        padding: 0;
+    }
+    .trust_Container .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .trust_Container .eg-para{
+        margin:35px 22px;
     }
     .mission_strategy{
-        grid-template-columns: repeat(2,1fr);
-        row-gap: 30px;
-        column-gap: 0;
+        height: 900px;
+        padding: 40px;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
     }
     .about,.mission,.strategy{
+        height: 100%;
+        width: 100%;
         margin: auto;
-        height: 530px;
-        width: 440px;
-        gap: 18px;
-        line-height: 1.4;
     }
     .trussSystemimg1,.trussSystemimg2,.trussSystemimg3{
-        height: 530px;
-        width: 440px;
+        height: 100%;
+        width: 100%;
         margin: auto;
+        background-position: 50% 50%;
     }
-    .experience>div{
-        grid-template-columns: 50% 50%;
+    .experience_Container{
+        grid-template-columns:repeat(2,1fr);
     }
-    .experience>div>div>h6{
-        margin: 0 0 50px; 
+    .experience_Container .eg-left{
+        padding: 0;
     }
-    .experience>div>div>p{
-        margin: 0 0 50px;
+    .experience_Container .eg-right .eg-heading6{
+        margin: 0 0 0 20px; 
     }
-    .experience>div>div{
-        padding: 30px 0;
+    .experience_Container .eg-left .eg-heading6{
+        margin-left:20px; 
     }
-    .experiencePart2>img{
-        margin: 0 0 60px 144px;
-        height: 219px;
-        width: 300px;
+    .experience_Container h6+.eg-para{
+        margin-left:20px;
     }
-    .team{
-        height: 1300px;
+    .experience_Container .eg-rightImg{
+        height: 220px;
+        width: 266px;
     }
-    .teamImg1{
-        height: 338px;
-        width: 338px;
-        margin: 140px auto 0 calc(((100% - 0px) / 2));
+    .experience_Container .eg-leftImg{
+        height: 218px;
+        width: 298px;
     }
-    .teamImg2{
-        height: 371px;
-        width: 371px;
-        margin: 340px auto 0 calc(((100% - 214px) / 2));
+    .team_Container .img1{
+        height: 236px;
+        width: 236px;
+        margin: 213px auto 0 calc(((100% - 100px) / 2));
     }
-    .teamImg3{
-        height: 290px;
-        width: 290px;
-        margin: 540px auto 0 calc(((100% - 603px) / 2));
+    .team_Container .img2{
+        height: 270px;
+        width: 270px;
+        margin: 360px auto 0 calc(((100% - 175px) / 2));
+    }
+    .team_Container .img3{
+        height: 285px;
+        width: 285px;
+        margin: 555px auto 0 calc(((100% - 300px) / 2));
         
     }
-    .teamImg4{
-        height: 469px;
-        width: 548px;
+    .team_Container .img4{
+        height: 380px;
+        width: 430px;
         gap: 15px;
-        padding-left: 45px;
-        padding-right: 45px;
+        padding: 20px 30px;
         z-index: 2;
-        margin: 730px auto 0 calc(((100% - 671px) / 2));
+        margin: 790px auto 0 calc(((100% - 598px) / 2));
 
     }
-    .teamImg4>h2{
-        font-size: 3rem;
+    .team_Container .img5{
+        height: 195px;
+        width: 195px;
+        margin: 25px auto 0 calc(((100% - 525px) / 2));
     }
-    .div5{
-        height: 301px;
-        width: 301px;
-        margin: 39px auto 0 calc(((100% - 430px) / 2));
+
+    .department_Container{
+        grid-template-rows:320px 270px; 
     }
-    .Department-Heads{
-        grid-template-rows: 539px 280px; 
+    .cardContainer{
+        padding: 0;
+        grid-template-columns:repeat(3,1fr)
     }
-    .roleOverview{
-        padding: 20px;
-        grid-template-columns: repeat(3,1fr);
+    .cards{
+        height: 362px;
+        width: 219px;
+        padding: 0;
     }
-    .wooden-structures{
-        max-height  : 1115px;
+    #card2{
+        top: 130px;
     }
-    .wooden-design{
-        max-width:850px;
-        min-width: 850px;
-        height: 742px;
-        grid-template-rows: 25% 75%;
-        bottom: 278px;
+    .wooden_structures{
+        margin: 0;
+        height: 1060px;
     }
-    .wooden-design>div{
-        max-width: 590px;
-        padding: 50px 0;
+    .wooden_structures .eg-bgfiller{
+        height: 270px;
     }
-    .wooden-design>img{
-        height: 420px;
-        width: 640px;
-        bottom: 260px;
+    .structuresContainer{
+        max-width:92%;
+        display: block;
+        bottom: 100px;
+        padding-bottom: 70px;
     }
-    .wooden-design>div>h2{
-        font-size:2.5rem;
-        margin: 0 25px 40px;
+    .structuresContainer .eg-img{
+        height: 350px;
+        width: 480px;
     }
-    .wooden-design>div>p,.wooden-design>div>a{
-        margin:0 32px 35px;
+    .structuresContainer .eg-textPart{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
-    .project>div{
-        padding: 0 46px 30px;
-        grid-template-columns: 100%;
-        row-gap: 20px;
+    .structuresContainer .eg-textPart h2+.eg-para{
+        margin: 50px 0 0;
+    }
+    .structuresContainer .eg-textPart .learnMore_btn{
+        margin: 60px auto 0;
+    }
+
+    .project .projectContainer{
+        grid-template-columns: 32% 30% 35% ;
+        padding: 0 38px;
         bottom: 0;
     }
-    .contact>div{
-        height: auto;
-        grid-template-columns:repeat(2\3,1fr);
-        padding-bottom: 30px;
+    .projectContainer .projectCol3 .eg-para{
+        padding:20px
+        ;
+    }
+    .projectContainer .projectCol3 .learnMore_btn{
+        margin: 20px 20px 30px;
+        height: 50px;
+        width: 160px;
     }
     .contactForm>input,.contactForm>textarea{
-        max-width: 300px;
-        width: 300px;
+        max-width: 150px;
+        width: 150px;
         margin: 20px auto;
     }
+    .detail{
+        width: 94%;
+        padding: 0 0 0 20px;
+    }
     .contactSectionImg{
-        height: 360px;
-        width: 303px;
+        height: 93%;
+        width: 84%;
         margin: 20px auto 0;
     }
     #formBtn{
