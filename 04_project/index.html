@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Demo Project no-04</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navigetionBar">
             <div class="logo">
                 <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/f1d806cfa0e8530aa7e0f17c/3d1cb46b-c73f-44c9-a49f-f830531c72dd.png" alt="">
             </div>
@@ -16,85 +19,91 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
             </div>
         </nav>
-        <div id="menuList" class="hidden">
+        <div class="sideBarHide " >
             <svg id="clsoeIcon" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#F3F3F3"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
             <ul id="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#" class="eg-anker">Home</a></li>
+                <li><a href="#" class="eg-anker">About Us</a></li>
+                <li><a href="#" class="eg-anker">contact</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <section class="introduction">
-            <div class="backgroundcol">
+        <section class="section introduction">
+            <div class="intro_Container">
+                <div class="eg-colum"></div>
                 <div class="aboutHeading">
-                    <h5>About Conpany</h5>
-                    <h1>What wood is used for house building?</h1>
+                    <h5 class="eg-heading5">About Conpany</h5>
+                    <h1 class="eg-heading1">What wood is used for house building?</h1>
                 </div>
-
-                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2dc07a29426952e4b6a9955f/ht6uy-min.jpg" alt="carpainterImg">
+                <div class="carpainterImg">
+                    <img class="eg-img" src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2dc07a29426952e4b6a9955f/ht6uy-min.jpg" alt="carpainterImg">
+                </div>
 
                 <div class="intro_Overview">
                     <div class="overviewCard">
                         <div class="svgIcon"></div>
-                        <h6>Truss Systems</h6>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <h6 class="eg-headign6">Truss Systems</h6>
+                        <p class="eg-para">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                     </div>
                     <div class="overviewCard">
                         <div class="svgIcon"></div>
-                        <h6>Technology</h6>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <h6 class="eg-headign6">Technology</h6>
+                        <p class="eg-para">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                     </div>
                     <div class="overviewCard">
                         <div class="svgIcon"></div>
-                        <h6>Materials</h6>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <h6 class="eg-headign6">Materials</h6>
+                        <p class="eg-para">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                     </div>
                     <div class="overviewCard">
                         <div class="svgIcon"></div>
-                        <h6>Manufacturing</h6>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <h6 class="eg-headign6">Manufacturing</h6>
+                        <p class="eg-para">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="trussSystem">
-            <div>
-                <h2>Wood Truss Systems</h2>
-                <p>The leading supplier of new and used truss equipment. Combining the qualities and expertise you should expect from an industry supplier.</p>
+        <section class="section trussSystem">
+            <div class="trust_Container">
+                <h2 class="eg-heading2">Wood Truss Systems</h2>
+                <p class="eg-para">The leading supplier of new and used truss equipment. Combining the qualities and expertise you should expect from an industry supplier.</p>
                 <div class="mission_strategy">
                     <div class="about">
-                        <h3>About Us</h3>
-                        <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                        <h3 class="eg-heading3">About Us</h3>
+                        <p class="eg-para">Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
                     </div>
                     <div class="trussSystemimg1"></div>
                     <div class="strategy">
-                        <h3>Our Strategy</h3>
-                        <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                        <h3 class="eg-heading3">Our Strategy</h3>
+                        <p class="eg-para">Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
                     </div>
                     <div class="trussSystemimg2"></div>
                     <div class="mission">
-                        <h3>Our Mission</h3>
-                        <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                        <h3 class="eg-heading3">Our Mission</h3>
+                        <p class="eg-para">Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
                     </div>
                     <div class="trussSystemimg3"></div>
                 </div>
             </div>
         </section>
-        <section class="experience">
-            <div>
-                <div class="experiencePart1">
-                    <h6>Sure, we’ve been around the block. <br> We probably worked with the people who built it. </h6>
-                    <p>Dui ut ornare lectus sit. Tincidunt lobortis feugiat vivamus at augue eget arcu. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
-                    <div class="forBgImg"></div>
-                    <p id="part1para2">Images from <a href="https://www.freepik.com/photos/wood">freepik</a></p>
-                    <a href="#" class="learnMore">learn more</a>
+        <section class="section experience">
+            <div class="experience_Container">
+                <div class="eg-right">
+                    <h6 class="eg-heading6">Sure, we’ve been around the block. <br> We probably worked with the people who built it. </h6>
+                    <p class="eg-para">Dui ut ornare lectus sit. Tincidunt lobortis feugiat vivamus at augue eget arcu. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
+                    <div class="eg-rightImg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ47sNj6AK5cI855Ka0y5ctjfi_vQrs8vzs1hjjxoimjO80rL" alt="">
+                    </div>
+                    <p class="eg-para">Images from <a href="https://www.freepik.com/photos/wood">freepik</a></p>
+                    <a href="#" class="learnMore_btn ">learn more</a>
                 </div>
-                <div class="experiencePart2">
-                    <img src="https://www.tenonworld.com/wp-content/uploads/2021/04/empty-floor-front-modern-building-scaled-1024x682.jpg" width="360px" height="245px" alt="">
-                    <h6>Earning your business with experience, <br> expertise, and trust.</h6>
+                <div class="eg-left">
+                    <div class="eg-leftImg">
+                        <img src="https://www.tenonworld.com/wp-content/uploads/2021/04/empty-floor-front-modern-building-scaled-1024x682.jpg" alt="">
+                    </div>
+                    <h6 class="eg-heading6">Earning your business with experience, <br> expertise, and trust.</h6>
                     <ul>
                         <li>Component Production Equipment</li>
                         <li>Wall Panel Framing and Sheathing Equipment</li>
@@ -109,67 +118,69 @@
                 </div>
             </div>
         </section>
-        <section class="team">
-           <div class="teamImg teamImg1"></div>
-           <div class="teamImg teamImg2"></div>
-           <div class="teamImg teamImg3"></div>
-           <div class="teamImg teamImg4">
-                <h2>Our Team</h2>
-                <p>Nunc mi ipsum faucibus vitae aliquet. Pellentesque elit eget gravida cum sociis natoque penatibus. Urna duis convallis convallis tellus id interdum velit. Proin sed libero enim sed faucibus turpis in.</p>
-                <a href="#">read more</a>
-                <p id="div4para2">Images from<a href="#">Freepik</a></p>
-           </div>
-           <div class="div5"></div>
-        </section>
-        <section class="Department-Heads">
-            <div class="roleOverview">
-                <div id="Department1">
-                    <div class="headImg headImg1"></div>
-                    <p>"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
-                    <h6>Nill Smith <br> <span>Financial Director</span></h6>
+        <section class="section team">
+            <div class="team_Container">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4">
+                     <h2>Our Team</h2>
+                     <p>Nunc mi ipsum faucibus vitae aliquet. Pellentesque elit eget gravida cum sociis natoque penatibus. Urna duis convallis convallis tellus id interdum velit. Proin sed libero enim sed faucibus turpis in.</p>
+                     <a href="#" class="eg-anker">read more</a>
+                     <p class="eg-para">Images from<a href="#" class="eg-anker">Freepik</a></p>
                 </div>
-                <div id="Department2">
-                    <div class="headImg headImg2"></div>
-                    <p>"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
-                    <h6>Merry Kinnly <br> <span>Chief Accountant</span></h6>
-                </div>
-                <div id="Department3">
-                    <div class="headImg headImg3"></div>
-                    <p>"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
-                    <h6>Frank Kinney <br> <span>Merry Kinnly </span></h6>
-                </div>
-            </div>
-            <div class="backgroundFiller"></div>
-        </section>
-        <section class="wooden-structures">
-            <div class="backgroundFiller2"></div>
-            <div class="wooden-design">
-                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/871b7a8ca94356478e66091e/rerrr-min.jpg" alt="">
-                <div>
-                    <h2>An innovative design suite for wooden structures</h2>
-                    <p>Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras sed felis eget. Amet risus nullam eget felis eget nunc. Lacus vestibulum sed arcu non odio euismod. Consectetur adipiscing elit duis tristique.</p>
-                    <p id="wooden-designPara2">Images from <a href="#">freepik</a></p>
-                    <a href="#" class="learnMore">learn more</a>
-                </div>
+                <div class="img5"></div>
             </div>
         </section>
-        <section class="project">
-            <div>
-                <div>
-                    <h2>Our Construction Projects</h2>
+        <section class="section Department">
+            <div class="department_Container">
+                <div class="cardContainer">
+                    <div class="cards">
+                        <div class="headImg headImg1"></div>
+                        <p class="eg-para">"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
+                        <h6 class="eg-headign6">Nill Smith <br> <span>Financial Director</span></h6>
+                    </div>
+                    <div class="cards" id="card2">
+                        <div class="headImg headImg2"></div>
+                        <p class="eg-para">"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
+                        <h6 class="eg-headign6">Merry Kinnly <br> <span>Chief Accountant</span></h6>
+                    </div>
+                    <div class="cards">
+                        <div class="headImg headImg3"></div>
+                        <p class="eg-para">"Sample quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc"</p>
+                        <h6 class="eg-headign6">Frank Kinney <br> <span>Merry Kinnly </span></h6>
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        Dui ut ornare lectus sit. Tincidunt lobortis feugiat vivamus at augue eget arcu. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
+                <div class="backgroundFiller"></div>
+            </div>
+        </section>
+        <section class="section wooden_structures">
+            <div class="eg-bgfiller"></div>
+            <div class="structuresContainer">
+                <div class="eg-img">
+                    <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/871b7a8ca94356478e66091e/rerrr-min.jpg" alt="">
                 </div>
-                <div>
-                    <p>Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
-                    <a href="#" class="learnMore">learn more</a>
+                <div class="eg-textPart">   
+                    <h2 class="eg-heading2">An innovative design suite for wooden structures</h2>
+                    <p class="eg-para">Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras sed felis eget. Amet risus nullam eget felis eget nunc. Lacus vestibulum sed arcu non odio euismod. Consectetur adipiscing elit duis tristique.</p>
+                    <p class="eg-para">Images from <a href="#">freepik</a></p>
+                    <a href="#" class="learnMore_btn">learn more</a>
                 </div>
             </div>
         </section>
-        <section class="contact">
-           <div>
+        <section class="section project">
+            <div class="projectContainer">
+                    <h2 class="eg-heading2">Our Construction Projects</h2>
+                    <p class="eg-para">
+                    Dui ut ornare lectus sit. Tincidunt lobortis feugiat vivamus at augue eget arcu. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
+                <div class="projectCol3">
+                    <p class="eg-para">Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sodales neque sodales ut etiam sit amet nisl. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vitae suscipit tellus mauris a.</p>
+                    <a href="#" class="learnMore_btn">learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="section contact">
+           <div class="contactContainer">
                 <form action="" class="contactForm">
                     <input type="text" placeholder="Enter your name">
                     <input type="email" placeholder="Enter valide email address">
