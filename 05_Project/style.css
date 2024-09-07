@@ -1,0 +1,2645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+}
+:root{
+    --main-color:#EC5711;
+    --heading-font:"Raleway", sans-serif;
+    --para-font:'Open Sans', sans-serif;
+}
+
+.navigetionBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    max-width: 1349px;
+    margin: auto;
+}
+#clsoeIcon{
+    margin: 50px 0 0 200px;
+}
+.sideBarHide{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform:translateX(-100%);
+    width: 300px;
+    z-index: 2;
+    background: black;
+    transition: transform 0.6s ease-out;
+}
+.show{
+    transform: translateX(0);
+}
+#list{
+    margin:70px 20px 0;
+}
+.sideBarHide .eg-anker{
+    font-size: 1.5rem;
+    font-family:  Montserrat, sans-serif;
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
+
+    &:hover{
+        border: 2px solid yellow;
+        border-radius: 10px;
+    }
+}
+.sideBarHide li{
+    margin: 50px 0 0;
+}
+
+.imgFrom{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #6C6C6C;
+    font-family: var(--para-font);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    animation: LeftEnter 1.5s ease-out;
+}
+.freepik{
+    color: black;
+    letter-spacing: 2px;
+    color: #6C6C6C;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #6C6C6C;
+
+    &:hover{
+        border-bottom:1px solid var(--main-color);
+    }
+}
+
+/* ++++++  introduction Section ++++++ */
+
+.introduction .container{
+    width: calc(((100% - 1140px) / 2) + 1140px);
+    margin: 60px 0 0 auto;
+}
+.introduction .eg-about{
+    display:flex;
+    flex-direction: row;
+}
+.introduction .eg-about .eg-text{
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+
+}
+.introduction .eg-heading6{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #6C6C6C;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    animation: LeftEnter 1.5s ease-out;
+}
+.introduction .eg-heading2{
+    font-family:var(--heading-font);
+    font-size: 3rem;
+    line-height: 1.1;
+    animation: -Leftzoom 1.5s ease-out;
+}
+.introduction .eg-spna{
+    color: var(--main-color);
+}
+.introduction .eg-text .eg-anker{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    color: #404040;
+    align-self: center;
+    border: 2px solid #404040;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 25px 50px 25px 50px;
+    font-family: var(--para-font);
+    margin:20px auto 0 0;
+    animation: -Leftzoom 1.5s ease-out;
+
+    &:hover{
+        color: white;
+        background-color: black;
+        border:2px solid black;
+    }
+}
+.introduction .eg-about .eg-img{
+    min-height: 629px;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/ab7f0b323c2d50609f59ef77/ssss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    animation: RightEnter 1.5s ease-out ;
+}
+.introduction .eg-servicesIcon{
+    max-width: 1140px;
+}
+.introduction .eg-iconContainer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.introduction .eg-iconContainer .svgBox{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 30px;
+    gap: 25px;
+}
+.introduction .eg-iconContainer .eg-spna{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    /* animation: EnterTop 1.5s ease-out; */
+}
+.introduction .eg-iconContainer .eg-spna img{
+    height: 100%;
+    width: 100%;
+    animation: EnterTop 1.5s ease-out;
+}
+.introduction .eg-iconContainer .svgBox h4{
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    animation: EnterTop 1.5s ease-out;
+}
+.introduction .eg-iconContainer .svgBox a{
+    font-size: 0.875rem;
+    width: 46px;
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--para-font);
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    animation: EnterBottom   1.5s ease-out;
+    
+    &:hover{
+        color: var(--main-color);
+    }
+}
+
+
+/*  +++++   About Section Part1  +++++  */
+.aboutPart1{
+    min-height: 640px;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/189ac1c902bf5988ad7e43e5/cv.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-top: 90px;
+}
+.aboutPart1 .container{
+    max-width: 1140px;
+    min-height: 640px;
+    margin: auto;
+    padding: 156px 0 0;
+}
+.aboutPart1 .container .texPart{
+    height: 268px;
+    width: 596px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    padding: 0 6px;
+    gap: 20px;
+    animation: topZoomIn 1.7s ease-out;
+}
+.aboutPart1 .container .eg-heading2{
+    font-size: 3.75rem;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+.aboutPart1 .container .eg-para{
+    line-height: 2.2;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: var(--para-font);
+}
+.aboutPart1 .container .eg-nevigate{
+    height: 125px;
+    width: 458px;
+    margin: auto;
+    display: flex;
+}   
+.aboutPart1 .container .book-call,
+.aboutPart1 .container .see-work{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.aboutPart1 .container .book-call{
+    animation: LeftEnter 1.5s ease-out
+}
+.aboutPart1 .container .see-work{
+    animation: RightEnter 1.5s ease-out;
+}
+.aboutPart1 .container .eg-nevigate .eg-anker{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    padding: 17px 39px;
+    text-decoration: none;
+    font-family: var(--para-font);
+    cursor: pointer;
+    font-family: monospace;
+}
+.aboutPart1 .book-call .eg-anker{
+    color: black;
+    margin: 0 0 0 auto;
+
+    &:hover{
+        color: white;
+        background-color: var(--main-color);
+    }
+}  
+.aboutPart1 .see-work .eg-anker{
+    color: white;
+    background-color: var(--main-color);
+    &:hover{
+        color: black;
+        background:transparent;
+    }
+}
+
+/*  +++++   About Section Part2  +++++  */
+.aboutPart2{
+    background-color: #e5e5e5;
+    min-height: 1196px;
+    display: flex;
+    flex-direction: column;
+}
+.aboutPart2 .imgContainer{
+    flex: 1;
+    max-width: 100%;
+    width: calc(((100% - 1140px) / 2) + 1140px);
+    max-height: 505px;
+    margin: 60px auto 0 0;
+    display: flex;
+    flex-direction: row;
+}
+.aboutPart2 .img{
+    flex: 0 0 51%;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5ea3aa822eda558e83a5f528/mnm-min.png");
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: LeftEnter 1.5s ease-out;
+}
+.aboutPart2 .texPart{
+    width: 948px;
+    margin: 28px auto 60px calc(((100% - 1140px) / 2));
+    display: flex;
+    flex-direction: column;
+}
+.aboutPart2 .texPart .row1,
+.aboutPart2 .texPart .row2{
+    display: flex;
+}
+.aboutPart2 .texPart .row1{
+    height: 206px;
+}
+.aboutPart2 .texPart .row2{
+    height: 100%;
+    gap: 7px;
+}
+.aboutPart2 .row1 .eg-01 h2{
+    font-size: 6rem;
+    margin-top: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family:"Oswald", sans-serif;
+    animation: LeftEnter 1.5s ease-out;
+}
+.aboutPart2 .row1 .eg-heading2{
+    font-size: 3.75rem;
+    margin: 27px 0 21px 54px;
+    font-weight: 700;
+    font-family:var(--heading-font);
+    text-transform: capitalize;
+    animation: RightEnter 1.5s ease-out;
+}
+.aboutPart2 .row1 .imgFrom{
+    font-size: 0.825rem;
+    margin: 25px 0 0 54px;
+}
+.aboutPart2 .row2 .work-para{
+    flex: 0 0 50%;
+    animation: LeftEnter 1.5s ease-out;
+}
+.aboutPart2 .row2 .work-para .eg-para{
+    line-height: 2.2;
+    font-size: 1.25rem;
+    padding-left: 15px;
+    font-weight: 400;
+    margin: 30px 10px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #525354;
+}
+
+.aboutPart2 .row2 .work-list{
+    width: 95%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 29px;
+    margin: auto;
+    animation: RightEnter 1.5s ease-out;
+}
+.aboutPart2 .row2 .work-list .eg-para{
+    line-height: 2.2;
+    font-size:1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4e4f4f;
+}
+.aboutPart2 .row2 .work-list .eg-span{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-right: 5px;
+}
+
+/*  ++++++    About part-3    ++++++   */
+.aboutPart3{
+    background-color: #E45500;
+}
+.aboutPart3 .container{
+    max-width: 1140px;
+    min-height: 650px;
+    margin: auto;
+    height: 570px;
+    padding: 60px 0;
+    display: flex;
+}
+.aboutPart3 .eg-part3_cal1{
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    animation: LeftEnter 1.5s ease-out;
+}
+.aboutPart3 .eg-heading3{
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: var(--heading-font);
+    color: white;
+    margin-right: 100px;
+}
+.aboutPart3 .cricle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 50px auto 0 30px;
+    background-color: #f28755;
+}
+.aboutPart3 .eg-part3_cal2{
+    animation: RightEnter 1.5s ease-out;
+}
+.aboutPart3 .eg-part3_cal2 .eg-para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    line-height: 2.2;
+    font-weight: 400;
+    margin-bottom: 63px;
+}
+.aboutPart3 .eg-part3_cal2 .eg-anker{
+    padding: 20px 26px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    text-transform:uppercase ;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--para-font);
+
+    &:hover{
+        color: var(--main-color);
+        background-color: white;
+    }
+}
+
+/*  ++++++++  Solution section  +++++++ */
+.solution{
+    min-height: 1196px;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8a26da78a00a5ae59520f3ab/gfgg.png");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.solution .imgContainer{
+    min-height: 508px;
+    width: calc(((100% - 1140px) / 2) + 1140px);
+    display: flex;
+    flex-direction:row;
+    margin: 0 0 0 auto;
+}
+.solution .imgContainer .blanck{
+    flex: 0 0 50%;
+}
+.solution .imgContainer .img{
+    min-height: 508px;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/062770aafa30525d96377e8e/bbbb-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%  ;
+    width: 100%;
+    margin-top: 60px;
+    animation: RightEnter 1.5s ease-out;
+}
+.solutionText .texPart{
+    width: 948px;
+    margin: 28px auto 60px calc(((100% - 1140px) / 2));
+    display: flex;
+    flex-direction: column;
+}
+.solutionText .texPart .row1,
+.solutionText .texPart .row2{
+    display: flex;
+}
+.solutionText .texPart .row1{
+    height: 206px;
+}
+.solutionText .texPart .row2{
+    height: 100%;
+    gap: 7px;
+}
+.solutionText .row1 .eg-01 h2{
+    font-size: 6rem;
+    margin-top: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family:"Oswald", sans-serif !important;
+    animation: LeftEnter 1.5s ease-out;
+}
+.solutionText .row1 .eg-heading2{
+    font-size: 3.75rem;
+    margin: 27px 0 21px 54px;
+    font-weight: 700;
+    font-family:var(--heading-font);
+    text-transform: capitalize;
+    animation: RightEnter 1.5s ease-out;
+}
+.solutionText .row1 .imgFrom{
+    font-size: 0.825rem;
+    margin: 25px 0 0 54px;
+}
+.solutionText .row2 .col1-para{
+    flex: 0 0 50%;
+}
+.solutionText .row2 .col1-para .eg-para{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.2;
+    margin: 30px 10px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    color:black;
+}
+.solutionText .row2 .col2{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 29px;
+}
+.solutionText .row2 .col2 .eg-para{
+    line-height: 2.2;
+    font-size:1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4e4f4f;
+}
+
+
+
+
+
+/*  ++++++++ Client Section  +++++++ */
+.clients{
+    background-color: var(--main-color);
+}
+.clients .container{
+    min-height: 950px;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.clients .container>.eg-headign6{
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-top: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--heading-font);
+    animation: EnterTop 1.5s ease-out;
+}
+.clients .container > .eg-heading2{
+    font-size: 3.75rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    animation: EnterTop 1.5s ease-out;
+}
+.clients .container > .eg-para{
+    font-size: 1.25rem;
+    width: 711px;
+    margin: 13px auto 0;
+    font-family: var(--para-font);
+    line-height: 2.2;
+    animation: EnterTop 1.5s ease-out;
+}
+.clients .container .clientSells{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+}
+.clients .container .clientBox{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    align-items: center;
+    height: 475px;
+}
+.clients .container .clientSells .img{
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    background-color: red;
+    border: 5px solid white;
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: Rotat_Scale 1.5s ease-out;
+}
+.clients .container .clientSells .img1{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/a5a678d8dfcf5f8dabb3c9bf/w.jpg");
+}
+.clients .container .clientSells .img2{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c09014f9e7715438bb869fbb/ds.jpg");
+}
+.clients .container .clientSells .img3{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/980d881d762859b98207594a/hgghgh.jpg");
+}
+.clients .container .clientSells .img4{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/29cec8e9d35b5e4cb0ccff06/vb.jpg");
+}
+.clients .container .clientSells .img5{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/955b82b2244f5ecc8f56deef/bvbb.jpg");
+}
+.clients .container .clientSells .img6{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b04bac8772ad539583653fe6/ghght4.jpg");
+}
+.clients .container .clientBox .eg-para{
+    font-size: 1.0625rem;
+    line-height: 2;
+    margin: 20px 0 0;
+    font-family: var(--para-font);
+    text-align: center;
+    animation: EnterBottom 1.5s ease-out;
+}
+.clients .container .clientBox .eg-heading5{
+    font-size: 1.25rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin: 40px 0 0;
+    animation: EnterBottom 1.5s ease-out,ZoomIn 1.5s ease-out;
+}
+.clients .container .clientBox .eg-heading6{
+    font-size: 0.875rem;
+    margin: 14px 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: var(--heading-font);
+    animation: EnterBottom 1.5s ease-out,ZoomIn 1.5s ease-out;
+}
+.clients .container .imgFrom{
+    margin: 30px auto 60px;
+    font-size: 1.25rem;
+    line-height: 2.2;
+    color: white;
+}
+.clients .container .imgFrom .freepik{
+    color:white;
+    border-bottom: 1px solid white;
+
+    &:hover{
+        border-bottom:1px solid white;
+        opacity: 0.6;
+    }
+}
+
+
+
+
+/*  Process & Success Section */
+.ProcessSuccess{
+    background-color: white;
+    min-height: 1196px;
+    display: flex;
+    flex-direction: column;
+}
+.ProcessSuccess .imgContainer{
+    flex: 1;
+    max-width: 100%;
+    width: calc(((100% - 1140px) / 2) + 1140px);
+    max-height: 505px;
+    margin: 60px auto 0 0;
+    display: flex;
+    flex-direction: row;
+}
+.ProcessSuccess .img{
+    flex: 0 0 51%;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/d6839ed682b059f88f5d8068/ddd-min.png");
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: LeftEnter 1.5s ease-out;
+}
+.ProcessSuccess .texPart{
+    width: 948px;
+    margin: 28px auto 60px calc(((100% - 1140px) / 2));
+    display: flex;
+    flex-direction: column;
+}
+.ProcessSuccess .texPart .row1,
+.ProcessSuccess .texPart .row2{
+    display: flex;
+}
+.ProcessSuccess .texPart .row1{
+    height: 206px;
+}
+.ProcessSuccess .texPart .row2{
+    height: 100%;
+    gap: 5px;
+}
+.ProcessSuccess .row1 .eg-01 h2{
+    font-size: 6rem;
+    margin-top: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family:"Oswald", sans-serif;
+    animation: LeftEnter 1.5s ease-out;
+}
+.ProcessSuccess .row1 .eg-heading2{
+    font-size: 3.75rem;
+    margin: 27px 0 21px 54px;
+    font-weight: 700;
+    font-family:var(--heading-font);
+    text-transform: capitalize;
+    animation: RightEnter 1.5s ease-out;
+}
+.ProcessSuccess .row1 .imgFrom{
+    font-size: 0.825rem;
+    margin: 25px 0 0 54px;
+}
+.ProcessSuccess .row2 .work-para{
+    flex: 0 0 50%;
+}
+.ProcessSuccess .row2 .work-para .eg-para{
+    line-height: 2.2;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 30px 10px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #525354;
+    animation: LeftEnter 1.5s ease-out;
+}
+.ProcessSuccess .row2 .points{
+    width: 100%;
+    border-radius: 10px;
+    padding: 29px;
+    animation: EnterBottom 1.5s ease-out;
+}
+.ProcessSuccess .row2 .points .eg-para{
+    line-height: 2;
+    font-size:1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4e4f4f;
+}
+.ProcessSuccess .row2 .points .eg-span{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.ProcessSuccess .row2 .points .list{
+    list-style: none;
+    margin: 30px 0;
+    line-height: 2.2;
+    font-size: 1.125rem;
+    font-family:  Montserrat, sans-serif !important;
+    color: #8A8A8A;
+}
+.ProcessSuccess .row2 .points .list li::before{
+    content: "\25BA\0020";
+    color: var(--main-color);
+    font-size: 1.33rem;
+    margin-right: 10px;
+}
+
+
+
+
+/*  ++++++     Desigh Service Section  +++++++  */
+.desighService{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/aeda3396716d5768980b4f95/cb382335-e445-04d7-a9db-af5280e04681.png");
+    background-position: 50% 50%;
+    position: relative;
+    height: 630px;
+}
+.desighService .bcgFiller{
+    height: 375px;
+    margin: 0;
+    background-color: white;
+}
+.desighService div+.eg-heading2{
+    font-weight: 700;
+    font-size: 3.75rem;
+    font-family: var(--heading-font);
+    position: absolute;
+    top: 33px;
+    left: calc((100% - 1140px)/2);
+    animation: RightEnter 1.5s ease-out;
+}
+.desighService h2+.eg-para{
+    /* margin: 20px calc(((100% - 1140px) / 2) + 357px) 0 calc(((100% - 1140px) / 2)); */
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: var(--para-font);
+    color: lightslategray;
+    position: absolute;
+    top: 131px;
+    left: calc((100% - 1140px)/2);
+    right: calc(((100% - 1140px) / 2) + 357px);
+    line-height: 1.8;
+    animation: RightEnter 1.5s ease-out;
+}
+.desighService .serviceContainer{
+    width: 1140px ;
+    margin: 50px auto 60px;
+    position: absolute;
+    top: 200px;
+    left: calc((100% - 1140px)/2);
+} 
+.desighService .serviceContainer .cards{
+    min-height: 310px;
+    display: grid;
+    grid-template-columns: repeat(3,calc(33.33% - 14px));
+    gap: 20px;
+    color: white;
+}
+.desighService .serviceContainer .cards .card1,
+.desighService .serviceContainer .cards .card2,
+.desighService .serviceContainer .cards .card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #333333;
+    padding: 30px;
+    border-radius: 18px;
+    animation: ZoomIn 1.5s ease-out;
+}
+.desighService .serviceContainer .eg-heading3{
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+.desighService .serviceContainer .eg-para{
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+
+
+
+/*  ++++++  Contact Section  ++++++ */
+.contact{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/2625074/images/bg8.png");
+    background-size: cover;
+    background-position: 50% 38.97%;
+}
+.contact .container{
+    max-width: 1140px;
+    height: 850px;
+    margin: auto;
+    padding: 116px 0;
+}
+.contact .innercontainer{
+    display: flex;
+    gap: 30px;
+}
+.contact .col1{
+    flex: 0 0 53%;
+    padding: 30px;
+}
+.contact .innercontainer .eg-heading2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif !important;
+    line-height: 1.1;
+    color: white;
+}
+.contact .innercontainer .eg-heading2 .anima{
+    animation: LeftEnter 1.5s ease-out;
+}
+.contact .formContainer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: RightEnter 1.5s ease-out;
+}
+.contact .formContainer .eg-heading3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 0 0;
+    color: white;
+    font-family: " Montserrat", sans-serif !important;
+}
+.contact .formContainer .eg-para{
+    margin: 21px 88px 0 0;
+    font-size: 1.25rem;
+    color: white;
+    font-family: var(--para-font);
+    font-weight: 400;
+    line-height: 2.2;
+}
+.contact .form{
+    width: 388px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 26px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 30px;
+    
+}
+.contact .formContainer .name,
+.contact .formContainer .email{
+    height: 50px;
+    width: 335px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+
+    &::placeholder{
+        font-size: 1rem;
+        color: slategray;
+        font-family: var(--para-font);
+    }
+}
+.contact .formContainer .message{
+    max-width: 335px;
+    max-height: 150px;
+    height: 155px;
+    border: none;
+    outline: none;
+    padding:20px;
+    border-radius: 20px;
+    
+    &::placeholder{
+        font-size: 1.1rem;
+        color: slategray;
+        font-family: var(--para-font);
+    }
+}
+.contact .formContainer .btn{
+    height: 45px;
+    width: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    background-color: #ec5711 ;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: white;
+        color: var(--main-color);
+    }
+
+}
+
+.footer .container{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #333333;
+}
+.footer .container .eg-para{
+    /* padding: 0 447px; */
+    text-align: center;
+    line-height: 1.7;
+    color: white;
+    font-family: var(--para-font);
+}
+.footerLink>a{
+    color: lightblue;
+    font-family: var(--para-font);
+
+    &:hover{
+        color:#4d4a4a;
+        text-decoration: none;
+    }
+}
+.footerLink .eg-span{
+    color: white;
+    margin: 0 3px;
+    font-family: var(--para-font);
+
+}
+
+
+/*  ANIMETION  */
+
+@keyframes RightEnter{
+    0%{
+        transform: translateX(100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+@keyframes LeftEnter{
+    0%{
+        transform: translateX(-200%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+@keyframes Rotat_Scale{
+    0%{
+        transform:  rotate(180deg) scale(0.5);
+        opacity:0;
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes -Leftzoom{
+    0%{
+        transform: translateX(-100%) scale(0.5);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0) scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes EnterTop{
+    0%{
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes EnterBottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes topZoomIn{
+    0%{
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes ZoomIn{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/*   ++++++  Media quarys  ++++++   */
+
+@media only screen and (max-width:380px){
+    .navigetionBar{
+        padding:10px 20px;
+    }
+    .nevigetionBar .logo{
+        height: 45px;
+        width: 64px;
+    }
+    .nevigetionBar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    /* ++++++  introduction Section ++++++ */
+
+    .introduction .container{
+        width: auto;
+    }
+    .introduction .eg-about{
+        flex-direction: column;
+        width: 100vw;
+        align-items: end;
+    }
+    .introduction .eg-about .eg-img{
+        min-height: 330px;
+        min-height: 380px;
+        background-position-x: -15%;
+        width: calc(((100% - 20%) / 2) + 200px);
+    }
+    .introduction .eg-iconContainer{
+        grid-template-columns: 100%;
+        place-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox{
+        align-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox h4{
+        font-size: 1.875rem;
+    }
+
+    /*  +++++   About Section Part1  +++++  */
+    .aboutPart1{
+        margin-top: 40px;
+    }
+    .aboutPart1 .container{
+        padding: 100px 0 0;
+    }
+    .aboutPart1 .container .texPart{
+        width: auto;
+        margin: 0 0 50px;
+    }
+    .aboutPart1 .container .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .aboutPart1 .container .eg-nevigate{
+        height: 190px;
+        width: auto;
+        flex-direction: column;
+    }
+    .aboutPart1 .container .eg-nevigate .eg-anker{
+        margin: 0;
+    }
+
+    /*  +++++   About Section Part2  +++++  */
+    .aboutPart2{
+        min-height: 1250px;
+    }
+    .aboutPart2 .imgContainer{
+        max-height: 330px;
+        margin: 30px 0 0;
+    }
+    .aboutPart2 .img{
+        flex:0 0 calc(((100% - 20%) / 2) + 160px);
+    }
+    .aboutPart2 .texPart,
+    .aboutPart2 .texPart .row1,
+    .aboutPart2 .texPart .row2{
+        width: 100vw;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutPart2 .row1 .eg-01 h2{
+        font-size: 4.75rem;
+    }
+    .aboutPart2 .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 30px 0 0;
+    }
+
+    
+    /*  ++++++    About part-3    ++++++   */
+    .aboutPart3 .container{
+        min-height: 1230px;
+        flex-direction: column;
+    }
+    .aboutPart3 .eg-heading3{
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    .aboutPart3 .eg-part3_cal1{
+        flex: 0 0 25%;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-para{
+        margin: 0 0 63px 10px;
+    }
+
+    
+    /*  ++++++++  Solution section  +++++++ */
+    .solution{
+        background-position: 78% 50%;
+    }
+    .solution .imgContainer{
+        min-height: 330px;
+        width:auto;
+    }
+    .solution .imgContainer .blanck{
+        flex:  0 0 0;
+    }
+    .solution .imgContainer .img{
+        min-height: 330px;
+    }
+    .solutionText .texPart{
+        width: auto;
+        margin: auto;
+    }
+    .solutionText .texPart .row1,
+    .solutionText .texPart .row2{
+        flex-direction: column;
+    }
+    .solutionText .texPart .row1{
+        height: auto;
+    }
+    .solutionText .row1 .eg-01 h2{
+        font-size: 4.5rem;
+    }
+    .solutionText .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin-left: 20px;
+    }
+    .solutionText .row2 .col1-para .eg-para{
+        margin-left: 20px;
+    }
+
+
+
+    /*  ++++++++ Client Section  +++++++ */
+    .clients .container > .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .clients .container > .eg-para{
+        /* max-width:380px; */
+        /* width: 320px; */
+        margin: 13px 0;
+        text-align: center;
+    }
+    .clients .container .clientSells{
+        grid-template-columns: 100%;
+    }
+
+
+    /*  Process & Success Section */
+    .ProcessSuccess{
+        height:1420px;
+    }
+    .ProcessSuccess .imgContainer{
+        max-height: 330px;
+    }
+    .ProcessSuccess .img{
+        flex: 0 0 85%;
+    }
+    .ProcessSuccess .texPart{
+        width: auto;
+        margin: 28px 0 0;
+    }
+    .ProcessSuccess .texPart .row1,
+    .ProcessSuccess .texPart .row2{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 0 29px;
+    }
+    .ProcessSuccess .row1 .eg-01 h2{
+        font-size: 4rem;
+    }
+    .ProcessSuccess .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 25px 0 0;
+    }
+    .ProcessSuccess .row2 .points{
+        padding: 29px 0 0 0;
+    }
+    
+    /*  ++++++     Desigh Service Section  +++++++  */
+    .desighService{
+        height: 1680px;
+    }
+    .desighService .bcgFiller{
+        height: 600px;
+    }
+    .desighService div+.eg-heading2{
+        font-size: 2.25rem;
+        left: calc((100% - 325px)/2);
+    }
+    .desighService h2+.eg-para{
+        left: calc((100% - 347px)/2);
+        right:0;
+        text-align: center;
+        top: 200px;
+    }
+    .desighService .serviceContainer{
+        width:auto;
+        left: calc((100% - 335px)/2);
+        top: 415px;
+    }
+    .desighService .serviceContainer .cards{
+        grid-template-columns:280px;
+        margin: 0 23px;
+        grid-template-rows: repeat(3,380px);
+    }
+
+
+    /*  ++++++  Contact Section  ++++++ */
+    .contact{
+        background-position-x: 27%;
+    }
+    .contact .container{
+        height: auto;
+    }
+    .contact .innercontainer{
+        flex-direction: column;
+    }
+    .contact .col1{
+        padding: 25px;
+    }
+    .contact .innercontainer .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .contact .formContainer{
+        padding: 20px;
+    }
+    .contact .formContainer .eg-para{
+        margin-right:0;
+        line-height: 2;
+    }
+    .contact .form{
+        width: 300px;
+    }
+    .contact .formContainer .name,
+    .contact .formContainer .email,
+    .contact .formContainer .btn{
+        width:98%;
+    }
+
+
+
+
+    /* +++++++ Footer  ++++++ */
+    .footer .container .eg-para{
+        padding: 0 56px;
+        font-size: 0.875rem;
+    }
+    .footer .container .eg-span{
+        display: block;
+    }
+    .footer .footerLink{
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+} 
+@media only screen and (min-width:381px) and (max-width:480px){
+    .navigetionBar{
+        padding:10px 20px;
+    }
+    .nevigetionBar .logo{
+        height: 45px;
+        width: 64px;
+    }
+    .nevigetionBar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    /* ++++++  introduction Section ++++++ */
+
+    .introduction .container{
+        width: auto;
+    }
+    .introduction .eg-about{
+        flex-direction: column;
+        width: 100vw;
+        align-items: end;
+    }
+    .introduction .eg-about .eg-text{
+        padding: 20px;
+    }
+    .introduction .eg-about .eg-img{
+        min-height: 350px;
+        background-position-x: -15%;
+        min-height: 380px;
+        background-position-x: -15%;
+        width: calc(((100% - 20%) / 2) + 200px);
+    }
+    .introduction .eg-iconContainer{
+        grid-template-columns: 100%;
+        place-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox{
+        align-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox h4{
+        font-size: 1.875rem;
+    }
+
+    /*  +++++   About Section Part1  +++++  */
+    .aboutPart1{
+        margin-top: 40px;
+    }
+    .aboutPart1 .container{
+        padding: 100px 0 0;
+    }
+    .aboutPart1 .container .texPart{
+        width: auto;
+        margin: 0 0 50px;
+    }
+    .aboutPart1 .container .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .aboutPart1 .container .eg-nevigate{
+        height: 190px;
+        width: auto;
+        flex-direction: column;
+    }
+    .aboutPart1 .container .eg-nevigate .eg-anker{
+        margin: 0;
+    }
+
+    /*  +++++   About Section Part2  +++++  */
+    .aboutPart2{
+        min-height: 1250px;
+        padding-bottom: 50px;
+    }
+    .aboutPart2 .imgContainer{
+        max-height: 350px;
+        margin: 30px 0 0;
+    }
+    .aboutPart2 .img{
+        flex:0 0 calc(((100% - 20%) / 2) + 215px);
+        background-position-x: 130%;
+    }
+    .aboutPart2 .texPart,
+    .aboutPart2 .texPart .row1,
+    .aboutPart2 .texPart .row2{
+        width: 100vw;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutPart2 .row1 .eg-01 h2{
+        font-size: 4.75rem;
+        margin-left: 15px;
+    }
+    .aboutPart2 .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 30px 0 0 15px;
+    }
+    .aboutPart2 .row1 .imgFrom{
+        margin-left: 15px;
+    }
+   
+
+    
+    /*  ++++++    About part-3    ++++++   */
+    .aboutPart3 .container{
+        min-height: 1230px;
+        flex-direction: column;
+    }
+    .aboutPart3 .eg-heading3{
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    .aboutPart3 .eg-part3_cal1{
+        flex: 0 0 25%;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-para{
+        margin: 0 0 63px 20px;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-anker{
+        padding: 25px 30px;
+        margin: 0 0 0 20px;
+    }
+
+    
+    /*  ++++++++  Solution section  +++++++ */
+    .solution{
+        background-position: 78% 50%;
+    }
+    .solution .imgContainer{
+        min-height: 330px;
+        width:auto;
+    }
+    .solution .imgContainer .blanck{
+        flex:  0 0 0;
+    }
+    .solution .imgContainer .img{
+        min-height: 330px;
+    }
+    .solutionText .texPart{
+        width: auto;
+        margin: auto;
+    }
+    .solutionText .texPart .row1,
+    .solutionText .texPart .row2{
+        flex-direction: column;
+    }
+    .solutionText .texPart .row1{
+        height: auto;
+    }
+    .solutionText .row1 .eg-01 h2{
+        font-size: 4.5rem;
+        margin: 70px 0 0 30px;
+    }
+    .solutionText .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin-left: 30px;
+    }
+    .solutionText .row1 .imgFrom{
+        margin-left: 34px;
+    }
+    .solutionText .row2 .col1-para .eg-para{
+        margin-left: 30px;
+    }
+
+
+
+    /*  ++++++++ Client Section  +++++++ */
+    .clients .container > .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .clients .container > .eg-para{
+        max-width:380px;
+        width: 320px;
+        margin: 13px 0;
+        text-align: center;
+    }
+    .clients .container .clientSells{
+        grid-template-columns: 100%;
+    }
+    .clients .container .clientBox{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 420px;
+    }
+
+    /*  Process & Success Section */
+    .ProcessSuccess{
+        height:1420px;
+    }
+    .ProcessSuccess .imgContainer{
+        max-height: 330px;
+    }
+    .ProcessSuccess .img{
+        flex: 0 0 95%;
+    }
+    .ProcessSuccess .texPart{
+        width: auto;
+        margin: 28px 0 0;
+    }
+    .ProcessSuccess .texPart .row1,
+    .ProcessSuccess .texPart .row2{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 0 29px;
+    }
+    .ProcessSuccess .row1 .eg-01 h2{
+        font-size: 4rem;
+    }
+    .ProcessSuccess .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 25px 0 0;
+    }
+    .ProcessSuccess .row1 .imgFrom{
+        margin-left:0;
+    }
+    .ProcessSuccess .row2 .points{
+        padding: 29px 0 0 0;
+    }
+    
+    /*  ++++++     Desigh Service Section  +++++++  */
+    .desighService{
+        height: 1500px;
+    }
+    .desighService .bcgFiller{
+        height: 600px;
+    }
+    .desighService div+.eg-heading2{
+        font-size: 2.25rem;
+        left: calc((100% - 360px)/2);
+    }
+    .desighService h2+.eg-para{
+        left: calc((100% - 360px)/2);
+        right:0;
+        text-align: left;
+        top: 140px;
+    }
+    .desighService .serviceContainer{
+        width:auto;
+        left: calc((100% - 358px)/2);
+        top: 415px;
+    }
+    .desighService .serviceContainer .cards{
+        grid-template-columns:348px;
+        margin: 0;
+        grid-template-rows: repeat(3,310px);
+    }
+
+
+    /*  ++++++  Contact Section  ++++++ */
+    .contact{
+        background-position-x: 27%;
+    }
+    .contact .container{
+        height: auto;
+    }
+    .contact .innercontainer{
+        flex-direction: column;
+    }
+    .contact .col1{
+        padding: 25px;
+    }
+    .contact .innercontainer .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .contact .formContainer{
+        padding: 20px;
+    }
+    .contact .formContainer .eg-para{
+        margin-right:0;
+        line-height: 2;
+    }
+    .contact .form{
+        width: 300px;
+    }
+    .contact .formContainer .name,
+    .contact .formContainer .email,
+    .contact .formContainer .btn{
+        width: 250px;
+    }
+    .footer .container .eg-para{
+        padding: 0 70px ;
+        font-size: 1.25rem;
+    }
+    .footer .container .eg-span{
+        display: block;
+    }
+    .footer .footerLink{
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+} 
+@media only screen and (min-width:481px) and (max-width:680px){
+    .navigetionBar{
+        padding:10px 20px;
+    }
+    .nevigetionBar .logo{
+        height: 45px;
+        width: 64px;
+    }
+    .nevigetionBar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+
+    /* ++++++  introduction Section ++++++ */
+
+    .introduction .container{
+        width: auto;
+    }
+    .introduction .eg-about{
+        flex-direction: column;
+        width: 100vw;
+        align-items: end;
+    }
+    .introduction .eg-about .eg-text{
+        padding: 20px;
+    }
+    .introduction .eg-about .eg-img{
+        min-height: 380px;
+        background-position-x: -15%;
+        min-height: 380px;
+        background-position-x: -15%;
+        width: calc(((100% - 20%) / 2) + 240px);
+    }
+    .introduction .eg-iconContainer{
+        grid-template-columns:50% 50%;
+        place-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox{
+        align-items: left;
+        padding-left: 0;
+        padding-right:0;
+    }
+    .introduction .eg-iconContainer .svgBox h4{
+        font-size: 1.5rem;
+    }
+
+
+
+
+    /*  +++++   About Section Part1  +++++  */
+
+    .aboutPart1{
+        margin-top: 40px;
+    }
+    .aboutPart1 .container{
+        padding: 100px 0 0;
+    }
+    .aboutPart1 .container .texPart{
+        width: auto;
+        margin: 0 0 50px;
+    }
+    .aboutPart1 .container .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .aboutPart1 .container .eg-nevigate{
+        height: 190px;
+        width: auto;
+        flex-direction: row;
+    }
+    .aboutPart1 .container .eg-nevigate .eg-anker{
+        margin: 0;
+    }
+
+
+
+    /*  +++++   About Section Part2  +++++  */
+
+    .aboutPart2{
+        min-height: 1250px;
+        padding-bottom: 50px;
+    }
+    .aboutPart2 .imgContainer{
+        max-height: 350px;
+        margin: 30px 0 0;
+    }
+    .aboutPart2 .img{
+        flex:0 0 calc(((100% - 20%) / 2) + 215px);
+        background-position-x: 130%;
+    }
+    .aboutPart2 .texPart,
+    .aboutPart2 .texPart .row1,
+    .aboutPart2 .texPart .row2{
+        width: 100vw;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutPart2 .row1 .eg-01 h2{
+        font-size: 4.75rem;
+        margin-left: 15px;
+    }
+    .aboutPart2 .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 30px 0 0 15px;
+    }
+    .aboutPart2 .row1 .imgFrom{
+        margin-left: 15px;
+    }
+    .aboutPart2 .row2 .work-list{
+        width: 80%;
+        margin: 20px auto 0 20px;
+    }
+   
+
+    
+    /*  ++++++    About part-3    ++++++   */
+
+    .aboutPart3 .container{
+        min-height: 860px;
+        flex-direction: column;
+    }
+    .aboutPart3 .eg-heading3{
+        font-size: 1.5rem;
+        margin:auto;
+        line-height: 1.7;
+        text-align: center;
+    }
+    .aboutPart3 .eg-part3_cal1{
+        flex: 0 0 25%;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-para{
+        margin: 20px 0 63px 20px;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-anker{
+        padding: 25px 30px;
+        margin: 0 0 0 20px;
+    }
+
+    
+
+    /*  ++++++++  Solution section  +++++++ */
+
+    .solution{
+        background-position: 100% 50%;
+    }
+    .solution .imgContainer{
+        min-height: 350px;
+        width: calc(((100% - 20%)/2) + 140px);
+    }
+    .solution .imgContainer .blanck{
+        flex:  0 0 0;
+    }
+    .solution .imgContainer .img{
+        min-height: 350px;
+    }
+    .solutionText .texPart{
+        width: auto;
+        margin: auto;
+    }
+    .solutionText .texPart .row1{
+        flex-direction: column;
+    }
+    .solutionText .texPart .row1{
+        height: auto;
+    }
+    .solutionText .row1 .eg-01 h2{
+        font-size: 4.5rem;
+        margin: 70px 0 0 30px;
+    }
+    .solutionText .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin-left: 30px;
+    }
+    .solutionText .row1 .imgFrom{
+        margin-left: 34px;
+    }
+    .solutionText .row2 .col1-para .eg-para{
+        margin-left: 30px;
+    }
+
+
+
+    /*  ++++++++ Client Section  +++++++ */
+
+    .clients .container > .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .clients .container > .eg-para{
+        max-width:500px;
+        width: 500px;
+        margin: 13px 0;
+        text-align: center;
+    }
+    .clients .container .clientSells{
+        grid-template-columns: 50% 50%;
+    }
+    .clients .container .clientBox{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 470px;
+    }
+
+
+    
+
+    /*  Process & Success Section */
+
+    .ProcessSuccess{
+        height:1290px;
+    }
+    .ProcessSuccess .imgContainer{
+        max-height: 350px;
+        width: calc(((100% - 20%)/2) + 150px);
+    }
+    .ProcessSuccess .img{
+        flex: 0 0 95%;
+    }
+    .ProcessSuccess .texPart{
+        width: auto;
+        margin: 28px 0 0;
+    }
+    .ProcessSuccess .texPart .row1,
+    .ProcessSuccess .texPart .row2{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 0 29px;
+    }
+    .ProcessSuccess .row1 .eg-01 h2{
+        font-size: 4rem;
+    }
+    .ProcessSuccess .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 25px 0 0;
+    }
+    .ProcessSuccess .row1 .imgFrom{
+        margin-left:0;
+    }
+    .ProcessSuccess .row2 .points{
+        padding: 29px 0 0 0;
+    }
+    
+
+
+    /*  ++++++     Desigh Service Section  +++++++  */
+
+    .desighService{
+        height: 1320px;
+    }
+    .desighService .bcgFiller{
+        height: 500px;
+    }
+    .desighService div+.eg-heading2{
+        font-size: 2.25rem;
+        left: calc((100% - 90%)/2);
+    }
+    .desighService h2+.eg-para{
+        left: calc((100% - 90%)/2);
+        right:0;
+        text-align: left;
+        top: 140px;
+    }
+    .desighService .serviceContainer{
+        width:80%;
+        left: calc((100% - 88%)/2);
+        top: 340px;
+    }
+    .desighService .serviceContainer .cards{
+        grid-template-columns:100%;
+        margin: 0;
+        grid-template-rows: repeat(3,auto);
+    }
+
+
+    /*  ++++++  Contact Section  ++++++ */
+
+    .contact{
+        background-position-x: 27%;
+    }
+    .contact .container{
+        height: auto;
+    }
+    .contact .innercontainer{
+        flex-direction: column;
+    }
+    .contact .col1{
+        padding: 25px;
+    }
+    .contact .innercontainer .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .contact .formContainer{
+        padding: 20px;
+    }
+    .contact .formContainer .eg-para{
+        margin-right:0;
+        line-height: 2;
+    }
+    .contact .form{
+        width: 430px;
+    }
+    .contact .formContainer .name,
+    .contact .formContainer .email,
+    .contact .formContainer .btn,
+    .contact .formContainer .message{
+        max-width: 370px;
+        width: 370px;
+    }
+    .footer .container .eg-para{
+        padding: 0 56px;
+        font-size: 1.25rem;
+    }
+    .footer .container .eg-span{
+        display: block;
+    }
+    .footer .footerLink{
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+} 
+@media only screen and (min-width:681px) and (max-width:767px){
+    .navigetionBar{
+        padding:10px 20px;
+    }
+    .nevigetionBar .logo{
+        height: 45px;
+        width: 64px;
+    }
+    .nevigetionBar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+
+
+
+    /* ++++++  introduction Section ++++++ */
+
+    .introduction .container{
+        width: auto;
+    }
+    .introduction .eg-about{
+        flex-direction: column;
+        width: 100vw;
+        align-items: end;
+    }
+    .introduction .eg-about .eg-text{
+        padding: 20px;
+    }
+    .introduction .eg-about .eg-img{
+        min-height: 380px;
+        background-position-x: -15%;
+        min-height: 380px;
+        background-position-x: -15%;
+        width: calc(((100% - 20%) / 2) + 180px);
+    }
+    .introduction .eg-iconContainer{
+        grid-template-columns:50% 50%;
+        place-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox{
+        align-items: left;
+        padding-left: 0;
+        padding-right:0;
+    }
+    .introduction .eg-iconContainer .svgBox h4{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    /*  +++++   About Section Part1  +++++  */
+
+    .aboutPart1{
+        margin-top: 40px;
+    }
+    .aboutPart1 .container{
+        padding: 100px 0 0;
+    }
+    .aboutPart1 .container .texPart{
+        width: auto;
+        margin: 0 0 50px;
+    }
+    .aboutPart1 .container .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .aboutPart1 .container .eg-nevigate{
+        height: 190px;
+        width: auto;
+        flex-direction: row;
+    }
+    .aboutPart1 .container .eg-nevigate .eg-anker{
+        margin: 0;
+        margin: 0;
+        padding: 30px 80px;
+        border-radius: 85px;
+    }
+
+
+
+
+
+    /*  +++++   About Section Part2  +++++  */
+
+    .aboutPart2{
+        min-height: 1250px;
+        padding-bottom: 50px;
+    }
+    .aboutPart2 .imgContainer{
+        max-height: 350px;
+        margin: 30px 0 0;
+    }
+    .aboutPart2 .img{
+        flex:0 0 calc(((100% - 20%) / 2) + 215px);
+        background-position-x: 130%;
+    }
+    .aboutPart2 .texPart,
+    .aboutPart2 .texPart .row1{
+        width: 100vw;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutPart2 .row1 .eg-01 h2{
+        font-size: 4.75rem;
+        margin-left: 15px;
+    }
+    .aboutPart2 .row1 .eg-heading2{
+        font-size: 2.5rem;
+        margin: 30px 0 0 15px;
+    }
+    .aboutPart2 .row1 .imgFrom{
+        margin-left: 15px;
+    }
+    .aboutPart2 .row2 .work-list{
+        width: 43%;
+        background-color: white;
+        border-radius: 25px;
+        padding: 29px;
+        margin: 40px auto 0;
+        height: 315px;
+    }
+
+
+
+
+
+    /*  ++++++    About part-3    ++++++   */
+
+    .aboutPart3 .container{
+        min-height: 860px;
+        flex-direction: column;
+    }
+    .aboutPart3 .eg-heading3{
+        font-size: 1.5rem;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .aboutPart3 .eg-part3_cal1{
+        flex: 0 0 25%;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-para{
+        margin: 20px 0 63px 20px;
+    }
+    .aboutPart3 .eg-part3_cal2 .eg-anker{
+        padding: 25px 30px;
+        margin: 0 0 0 20px;
+    }
+
+
+
+
+
+    /*  ++++++++  Solution section  +++++++ */
+
+    .solution{
+        background-position: 100% 50%;
+    }
+    .solution .imgContainer{
+        min-height: 350px;
+        width: calc(((100% - 20%)/2) + 140px);
+    }
+    .solution .imgContainer .blanck{
+        flex:  0 0 0;
+    }
+    .solution .imgContainer .img{
+        min-height: 350px;
+    }
+    .solutionText .texPart{
+        width: auto;
+        margin: auto;
+    }
+    .solutionText .texPart .row1{
+        flex-direction: column;
+    }
+    .solutionText .texPart .row1{
+        height: auto;
+    }
+    .solutionText .row1 .eg-01 h2{
+        font-size: 4.5rem;
+        margin: 70px 0 0 30px;
+    }
+    .solutionText .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin-left: 30px;
+    }
+    .solutionText .row1 .imgFrom{
+        margin-left: 34px;
+    }
+    .solutionText .row2 .col1-para .eg-para{
+        margin-left: 30px;
+    }
+
+
+
+
+
+    /*  ++++++++ Client Section  +++++++ */
+
+    .clients .container > .eg-heading2{
+        font-size: 2.25rem;
+    }
+    .clients .container > .eg-para{
+        max-width:500px;
+        width: 500px;
+        margin: 13px 0;
+        text-align: center;
+    }
+    .clients .container .clientSells{
+        grid-template-columns: 50% 50%;
+    }
+    .clients .container .clientBox{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 470px;
+    }
+
+
+
+
+
+    /*  Process & Success Section */
+
+    .ProcessSuccess{
+        height:1100px;
+    }
+    .ProcessSuccess .imgContainer{
+        max-height: 360px;
+        width: calc(((100% - 20%)/2) + 150px);
+    }
+    .ProcessSuccess .img{
+        flex: 0 0 95%;
+    }
+    .ProcessSuccess .texPart{
+        width: auto;
+        margin: 28px 0 0;
+    }
+    .ProcessSuccess .texPart .row1{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 0 29px;
+    }
+    .ProcessSuccess .row1 .eg-01 h2{
+        font-size: 4rem;
+    }
+    .ProcessSuccess .row1 .eg-heading2{
+        font-size: 2.25rem;
+        margin: 25px 0 0;
+    }
+    .ProcessSuccess .row1 .imgFrom{
+        margin-left:0;
+    }
+    .ProcessSuccess .row2 .work-para{
+        padding: 0 0 0 30px;
+    }
+    .ProcessSuccess .row2 .points{
+        padding: 29px 30px 0;
+    }
+    
+
+
+
+    /*  ++++++     Desigh Service Section  +++++++  */
+
+    .desighService{
+        height: 1200px;
+    }
+    .desighService .bcgFiller{
+        height: 500px;
+    }
+    .desighService div+.eg-heading2{
+        font-size: 2.25rem;
+        left: calc((100% - 90%)/2);
+    }
+    .desighService h2+.eg-para{
+        left: calc((100% - 90%)/2);
+        right:0;
+        text-align: left;
+        top: 140px;
+    }
+    .desighService .serviceContainer{
+        width:90%;
+        left: calc((100% - 88%)/2);
+        top: 340px;
+    }
+    .desighService .serviceContainer .cards{
+        grid-template-columns:100%;
+        margin: 0;
+        grid-template-rows: repeat(3,auto);
+    }
+
+
+
+
+
+    /*  ++++++  Contact Section  ++++++ */
+    
+    .contact{
+        background-position-x: 27%;
+    }
+    .contact .container{
+        height: auto;
+    }
+    .contact .innercontainer{
+        /* flex-direction: column; */
+    }
+    .contact .col1{
+        padding: 25px;
+    }
+    .contact .innercontainer .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .contact .formContainer{
+        padding: 20px;
+        align-items: flex-start;
+        width: 42%;
+    }
+    .contact .formContainer .eg-para{
+        margin-right:0;
+        line-height: 2;
+    }
+    .contact .form,
+    .contact .formContainer .name,
+    .contact .formContainer .email,
+    .contact .formContainer .btn,
+    .contact .formContainer .message{
+        width: 100%;
+    }
+
+
+    .footer .container .eg-para{
+        padding: 0 56px;
+        font-size: 1.25rem;
+    }
+    .footer .footerLink{
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+
+} 
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .navigetionBar{
+        padding:10px 20px;
+    }
+    .nevigetionBar .logo{
+        height: 45px;
+        width: 64px;
+    }
+    .nevigetionBar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+
+
+
+    /* ++++++  introduction Section ++++++ */
+
+    .introduction .container{
+        width: auto;
+    }
+    .introduction .eg-about{
+        width: 100vw;
+        justify-content:space-between;
+    }
+    .introduction .eg-about .eg-text{
+        flex: 1 1 42%;
+        padding: 20px;
+    }
+    .introduction .eg-about .eg-img{
+        min-height: 400px;
+        background-position-x: -15%;
+        min-height: 400px;
+        background-position-x: -15%;
+        width: calc(((100% - 20%) / 2) + 90px);
+    }
+    .introduction .eg-iconContainer{
+        grid-template-columns:50% 50%;
+        place-items: center;
+    }
+    .introduction .eg-iconContainer .svgBox{
+        align-items: left;
+        padding-left: 0;
+        padding-right:0;
+    }
+    .introduction .eg-iconContainer .svgBox h4{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    /*  +++++   About Section Part1  +++++  */
+
+    .aboutPart1{
+        margin-top: 40px;
+    }
+    .aboutPart1 .container{
+        padding: 100px 0 0;
+    }
+    .aboutPart1 .container .texPart{
+        width: auto;
+        margin: 0 0 50px;
+    }
+    .aboutPart1 .container .eg-para{
+        width: 576px;
+        margin-top: 21px;
+    }
+    .aboutPart1 .container .eg-nevigate{
+        height: 190px;
+        flex-direction: row;
+    }
+    .aboutPart1 .container .eg-nevigate .eg-anker{
+        margin: 0;
+        margin: 0;
+        padding: 18px 45px;
+        border-radius: 85px;
+    }
+
+
+
+
+
+    /*  +++++   About Section Part2  +++++  */
+
+    .aboutPart2{
+        min-height: 1050px;
+        padding-bottom: 50px;
+    }
+    .aboutPart2 .imgContainer{
+        max-height: 400px;
+        margin: 30px 0 0;
+    }
+    .aboutPart2 .img{
+        flex:0 0 calc(((100% - 20%) / 2) + 190px);
+        background-position-x: 130%;
+    }
+    .aboutPart2 .texPart,
+    .aboutPart2 .texPart .row1{
+        width: 100vw;
+        margin: auto;
+        height: auto;
+    }
+    .aboutPart2 .row1 .eg-01 h2{
+        margin-left: 15px;
+    }
+    .aboutPart2 .row1 .eg-heading2{
+        margin: 30px 0 0 15px;
+    }
+    .aboutPart2 .row1 .imgFrom{
+        margin-left: 15px;
+    }
+    .aboutPart2 .row2 .work-list{
+        width: 43%;
+        background-color: white;
+        border-radius: 25px;
+        padding: 29px;
+        margin: 40px auto 0;
+        height: 315px;
+    }
+
+
+
+
+
+    /*  ++++++    About part-3    ++++++   */
+    .aboutPart3{
+        height: 980px;
+    }
+    .aboutPart3 .container{
+        width: 90%;
+        gap: 125px;
+    }
+    .aboutPart3 .eg-heading3{
+        margin-right:15px;
+        line-height: 1.4;
+    }
+
+
+
+
+    /*  ++++++++  Solution section  +++++++ */
+
+    .solution{
+        min-height: 980px;
+        background-position: 0% 50%;
+    }
+    .solution .container .solutionText{
+        width: 90%;
+        margin: auto;
+    }
+    .solution .imgContainer{
+        min-height: 400px;
+        width: calc(((100% - 20%)/2) + 140px);
+    }
+    .solution .imgContainer .blanck{
+        flex:  0 0 0;
+    }
+    .solution .imgContainer .img{
+        min-height: 350px;
+    }
+    .solutionText .texPart{
+        width: auto;
+        margin:90px auto 0;
+    }
+    .solutionText .texPart .row1{
+        height: auto;
+    }
+    .solutionText .row1 .eg-01 h2{
+        margin: 0px 0 0 30px; 
+    }
+    .solutionText .row1 .eg-heading2{
+        margin-top:0px;
+    }
+    .solutionText .row1 .imgFrom{
+        margin-left: 34px;
+    }
+    .solutionText .row2 .col1-para .eg-para{
+        margin-left: 30px;
+    }
+
+
+
+
+
+    /*  ++++++++ Client Section  +++++++ */
+
+    .clients .container{
+        padding-top: 30px;
+    }
+    .clients .container > .eg-para{
+        margin: 13px 0;
+        text-align: center;
+    }
+    .clients .container .clientSells{
+        grid-template-columns: 50% 50%;
+    }
+    .clients .container .clientBox{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 390px;
+    }
+
+
+
+
+
+    /*  Process & Success Section */
+
+    .ProcessSuccess{
+        height:1100px;
+    }
+    .ProcessSuccess .imgContainer{
+        max-height: 400px;
+        width: calc(((100% - 20%)/2) + 150px);
+    }
+    .ProcessSuccess .img{
+        flex: 0 0 95%;
+    }
+    .ProcessSuccess .texPart{
+        width: auto;
+        margin: 28px 0 0;
+    }
+    .ProcessSuccess .texPart .row1{
+        height: auto;
+        padding: 0 0 0 29px;
+    }
+    .ProcessSuccess .row2 .work-para{
+        padding: 0 0 0 30px;
+    }
+    .ProcessSuccess .row2 .points{
+        padding: 29px 30px 0;
+    }
+    
+
+
+
+    /*  ++++++     Desigh Service Section  +++++++  */
+
+    .desighService{
+        height: 1200px;
+    }
+    .desighService .bcgFiller{
+        height: 500px;
+    }
+    .desighService div+.eg-heading2{
+        font-size: 2.25rem;
+        left: calc((100% - 90%)/2);
+    }
+    .desighService h2+.eg-para{
+        left: calc((100% - 90%)/2);
+        right:calc((100% - 85%) / 2);
+        text-align: left;
+        top: 140px;
+    }
+    .desighService .serviceContainer{
+        width:70%;
+        left: calc((100% - 70%)/2);
+        top: 340px;
+    }
+    .desighService .serviceContainer .cards{
+        grid-template-columns:50% 50%;
+        margin: 0;
+        gap: 40px;
+    }
+
+
+
+
+
+    /*  ++++++  Contact Section  ++++++ */
+    
+    .contact{
+        background-position-x: 27%;
+    }
+    .contact .container{
+        height: auto;
+    }
+    .contact .col1{
+        padding: 25px;
+    }
+    .contact .innercontainer .eg-heading2{
+        font-size: 2.75rem;
+    }
+    .contact .formContainer{
+        padding: 20px;
+        align-items: flex-start;
+        width: 42%;
+    }
+    .contact .formContainer .eg-para{
+        margin-right:0;
+        line-height: 2;
+    }
+    .contact .form,
+    .contact .formContainer .name,
+    .contact .formContainer .email,
+    .contact .formContainer .btn,
+    .contact .formContainer .message{
+        width: 100%;
+    }
+
+        
+    .footer .container .eg-para{
+        padding: 0 56px;
+        font-size: 1.75rem;
+    }
+    .footer .footerLink{
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.75rem;
+    }
+
+} 
