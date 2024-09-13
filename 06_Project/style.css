@@ -1,0 +1,1482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+:root{
+    --textColor:#fafdff;
+    --bgcolor:#976253;
+    --headingfont:'Playfair Display', serif;
+    --parafont: 'Open Sans', sans-serif;
+}
+.body{
+    background-color: #1F2438;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.navBar .eg-heading3{
+    color: var(--textColor);
+    font: 1.875rem var(--headingfont);
+}
+
+#clsoeIcon{
+    margin: 50px 0 0 200px;
+}
+.sideBarHide{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform:translateX(-100%);
+    width: 300px;
+    z-index: 2;
+    opacity: 0.9;
+    background: black;
+    transition: transform 0.6s ease-out;
+}
+.show{
+    transform: translateX(0);
+}
+#list{
+    list-style-type: none;
+    margin:70px 20px 0;
+}
+.sideBarHide .eg-anker{
+    font-size: 1.5rem;
+    font-family:  Montserrat, sans-serif;
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
+
+    &:hover{
+        border: 2px solid yellow;
+        border-radius: 10px;
+    }
+}
+.sideBarHide li{
+    margin: 50px 0 0;
+}
+
+
+/* ++++++++++  fashiounRulesforMen  ++++++++++ */
+.fashionRulesforMen .container{
+    max-width: 1140px;
+    height: 930px;
+    margin: 60px auto 0;
+}
+.fashionRulesforMen .container .bg-row{
+    height: 480px;
+    background-color: #986253;
+}
+.fashionRulesforMen .container .contentContainer{
+    height: calc(100% - 156px);
+    width: 81%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 360px;
+}
+.fashionRulesforMen .contentContainer .row1{
+    flex:1 0 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.fashionRulesforMen .row1 .col1{
+    flex:1 0 39%;
+    height: 100%;
+}
+.fashionRulesforMen .row1 .col2{
+    flex:1 0 61%;
+}
+.fashionRulesforMen .row1 .col1 .eg-heading2{   /* NOTE  repeat again on line no. 92 */
+    font:2.25rem var(--headingfont);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--textColor);
+}
+.fashionRulesforMen .row1 .col1 .img{
+    height: 69%;
+    width: 97%;
+    margin: 30px 0 0;
+}
+.fashionRulesforMen .row1 .col1 .img img,
+.fashionRulesforMen .row1 .col2 .img img,
+.fashionRulesforMen .row2 .col2 .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fashionRulesforMen .row1 .col2 .img{
+    height:calc(100% + 60px);
+    width: calc(100% + 20px);
+    position: relative;
+    bottom: 65px;
+    left: 21px;
+}
+.fashionRulesforMen .row2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 36%;
+    margin: 20px 0 0;
+}
+.fashionRulesforMen .row2 .col1,
+.fashionRulesforMen .row2 .col2,
+.fashionRulesforMen .row2 .col3{
+    height: 100%;
+}
+.fashionRulesforMen .row2 .col1{
+    flex: 1 0 40%;
+    padding:0px 4px 0;
+}
+.fashionRulesforMen .row2 .col2{
+    flex: 1 0 25%;
+}
+.fashionRulesforMen .row2 .col3{
+    flex: 1 0 30%;
+    padding:0px 0 0 18px;
+}
+.fashionRulesforMen .row2 .col1 .eg-heading2{  /* NOTE  same for line 57 */
+    font: 2.25rem var(--headingfont);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--textColor);
+}
+.fashionRulesforMen .row2 .col1 .list{
+    list-style-position: inside;
+    line-height: 1.6;
+    margin: 30px 0 0 4px;
+}
+.fashionRulesforMen .row2 .col2 .img{
+    height: 100%;
+    width: 100%;
+}
+.fashionRulesforMen .row2 .col2 .img img{
+    object-position: 15% 0%;
+}
+.fashionRulesforMen .row2 .col3 .eg-para{
+    font: 1rem var(--parafont);
+    font-style: italic;
+    line-height: 1.8;
+}
+
+
+
+            /* ++++++++++ Brand Section  ++++++++++ */
+
+.clothingBrand .container{
+    max-width: 1140px;
+    min-height: 475px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.clothingBrand .innerContainer{
+    width: 78%;
+    margin:0 auto;
+}
+.clothingBrand .cornerBorder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 23px 3px 0 10px;
+}
+.clothingBrand .upLeft,
+.clothingBrand .upRight,
+.clothingBrand .downLeft,
+.clothingBrand .downRight{
+    height: 48px;
+    width: 48px;
+}
+.clothingBrand .upLeft,
+.clothingBrand .downLeft{
+    border-left: 4px solid var(--bgcolor);
+}
+.clothingBrand .upRight,
+.clothingBrand .downRight{
+    border-right: 4px solid var(--bgcolor);
+}
+.clothingBrand .upLeft,
+.clothingBrand .upRight{
+    border-top: 4px solid var(--bgcolor);
+    margin: 37px 0 0;
+}
+.clothingBrand .downLeft,
+.clothingBrand .downRight{
+    border-bottom: 4px solid var(--bgcolor);
+}
+
+.clothingBrand .eg-heading2{
+    font: 2.25rem var(--headingfont);
+    font-weight: 400;
+    margin: 14px 0 0;
+}
+.clothingBrand .eg-para{
+    font: 1rem var(--parafont);
+    line-height: 1.8;
+    padding: 0 122px 0;
+    margin: 30px 0 0;
+}
+
+            /*  ++++++++++ HOW TO START  ++++++++++  */
+
+.howtoStart .container::before{
+    content: '';
+    width: calc(((100% - 1140px) / 2) + 400px);
+    background-color: var(--bgcolor);
+    height: 707px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    margin-top: 103px;
+}
+.howtoStart .container{
+    max-width: 1140px;
+    margin: 66px auto 0;
+    padding: 0 0 0 65px;
+    min-height: 940px;
+    display: flex;
+}
+.howtoStart .eg-col1{
+    display: flex;
+    flex-direction: column;
+}
+.howtoStart .eg-col1 .img{
+    height: 50%;
+    width: 580px;
+}
+.howtoStart .eg-col1 .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.howtoStart .eg-cardContainer{
+    height: 52%;
+    width: 505px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 204px;
+    right: 64px;    
+}
+.howtoStart .eg-cardContainer .eg-card{
+    height: 90%;
+    width: 90%;
+    border: 2px solid var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+    text-align: center;
+    padding: 0 4px 0;
+ 
+}
+.howtoStart .eg-card .eg-heading2{
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--headingfont);
+    color:var(--bgcolor);
+    line-height: 1.1;
+}
+.howtoStart .eg-card .eg-para{
+    font-size: 1rem;
+    font-family: var(--parafont);
+    line-height: 1.8;
+    color: black;
+    padding:0 80px 0;
+}
+.btn{
+    height: 47px;
+    width: 181px;
+    border: 1px solid var(--bgcolor);
+    display: grid;
+    place-items: center;
+    color: var(--bgcolor);
+    text-transform: uppercase;
+    font-family: var(--parafont);
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s ease;
+     
+    &:hover{
+        background-color: var(--bgcolor);
+        color: white;
+    }
+}
+.howtoStart .eg-col2{
+    display: flex;
+    flex-direction: column;
+    padding: 153px 0 0 120px;
+}
+.howtoStart .eg-col2 .eg-heading2{
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: var(--headingfont);
+}
+.howtoStart .eg-col2 .eg-para{
+    font-size: 1rem;
+    font-family: var(--parafont);
+    font-weight: normal;
+    line-height: 1.8;
+    margin-top: 54px;
+}
+.howtoStart .eg-col2 .list{
+    list-style-position: inside;
+    line-height: 1.6;
+    margin-top: 30px;
+    font-family: var(--parafont);
+}
+
+
+        /*  ++++++++++ fashion section  ++++++++++ */
+
+.fashion{
+    height: 1100px;
+}
+.fashion .container::before{
+    content: '';
+    width: calc(((100% - 1140px) / 2) + 420px);
+    background-color: var(--bgcolor);
+    height: 610px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: 190px;
+}
+.fashion .container{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+}
+.fashion .container .eg-icon{
+    height: 65px;
+    width: 65px;
+    color: white;
+    border: 1px solid yellow;
+    display: grid;
+    place-items: center;
+}
+
+.fashion .container .col1 .iconContainer{
+    height: 550px;
+    width: 560px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-color: #1F2438;
+    position: relative;
+    top: 83px;
+    right: 17px;
+}
+.fashion .iconContainer .icon1,
+.fashion .iconContainer .icon2,
+.fashion .iconContainer .icon3,
+.fashion .iconContainer .icon4{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.fashion .iconContainer .innerBox{
+    height: 89%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #4f587b;
+    gap: 20px;
+    padding: 21px 25px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.fashion .innerBox .eg-para{
+    font: 1rem var(--parafont);
+    font-style: italic;
+    line-height: 1.8;
+} 
+.fashion .container .col2{
+    display: flex;
+    position: relative;
+}
+.fashion .container .col2 .eg-img{
+    height: 723px;
+    width: 560px;
+    z-index: -1;
+    position: relative;
+    right: 106px;
+}
+.fashion .container .col2 .eg-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fashion .container .col2 .eg-heading2{
+    font: 3rem var(--headingfont);
+    font-weight: 400;
+    position:relative;
+    top: 270px;
+    right: 40px;
+}
+
+    /* ++++++++++ style tips ++++++++++ */
+.styleTips .container{
+    max-width: 900px;
+    height: 280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.styleTips .container .row1{
+    height: 32%;
+}
+.styleTips .container .eg-heading2{
+    font: 1.875rem var(--headingfont);
+    font-family: var(--headingfont);
+    font-weight: 400;
+    text-align:left;
+}
+.styleTips .container .row2{
+    height: calc(100% - 37%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+.styleTips .container .line{
+    width:30%;
+    background-color: var(--bgcolor);
+    height: 3px;
+    margin: 15px auto 0;
+}
+.styleTips .container .row2 .eg-para{
+    font: 1rem var(--parafont);
+    text-align: left;
+    line-height: 1.8;
+    padding-right: 60px;
+}
+
+    /* ++++++++++ start line  ++++++++++ */
+.startThisLine{
+    margin-top: 112px;
+    min-height:1060px;
+}
+.startThisLine::before{
+    content: '';
+    width: calc(((100% - 16%) / 2) + 420px);
+    background-color: var(--bgcolor);
+    height: 610px;
+    position: absolute;
+    left:0;
+    z-index: -1;
+}
+.startThisLine .container{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.startThisLine .img{
+    height: 600px;
+    width: 942px;
+    position: absolute;
+    top: 123px;
+}
+.startThisLine .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.startThisLine .box1{
+    height: 379px;
+    width: 393px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 560px;
+    left: 22px;
+    background-color: #1F2438;
+}
+.startThisLine .box1 .eg-textcontainer{
+    height: 88%;
+    width: 85%;
+    display: grid;
+    place-items: center;
+    padding: 0 34px;
+    border: 1px solid var(--bgcolor );
+}
+.startThisLine .box1 .eg-textcontainer .eg-para{
+    font:1rem var(--parafont);
+    color: var(--bgcolor);
+    text-align: center;
+    line-height: 1.8;
+}
+.startThisLine .box2{
+    height: 477px;
+    width: 502px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:0;
+    top: 364px;
+}
+.startThisLine .box2 .eg-textcontainer{
+    height: 88%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 39px;
+    gap: 36px;
+    text-align: center;
+    border: 1px solid var(--bgcolor);
+}
+.startThisLine .box2 .eg-heading2{
+    font: 2.25rem var(--headingfont);
+    color: var(--bgcolor);
+}
+.startThisLine .box2 .eg-para{
+    font: 1rem var(--parafont);
+    color: black;
+    line-height: 1.8;
+}
+
+.outfit .container{
+    max-width: 1170px;
+    max-height: 1070px;
+    margin: auto;
+    display: flex;
+}
+.outfit .eg-col1{
+    flex:1 0 50%;
+    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    padding: 102px 0 0 75px;
+    gap: 110px;
+
+}
+.outfit .eg-col1 .eg-heading2{
+    font: 3rem var(--headingfont);
+    line-height: 1.1;
+    font-weight:400;
+    padding-right: 75px;
+}
+.outfit .eg-col1 .img{
+    height: 550px;
+    width: 435px;
+    box-shadow: 68px 89px 0px 0px var(--bgcolor);
+}
+.outfit .eg-col1 .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.outfit .eg-col2{
+    flex: 1 0 37%;
+    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    gap: 99px;
+    padding-top: 35px;
+}
+.outfit .eg-col2 .img{
+    height: 590px;
+    width: 435px;
+}
+.outfit .eg-col2 .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.outfit .eg-col2 .eg-para{
+    font:1rem var(--parafont);
+    line-height: 1.8;
+    padding-right: 95px;
+}
+.footerHeading{
+    border-top: 1px solid white;
+}
+.footerHeading .container{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footerHeading .container .row1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid white;
+}
+.footerHeading .box1,
+.footerHeading .box2,
+.footerHeading .box3{
+    flex: 1 0 33.33%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 43px;
+    gap: 22px;
+}
+.footerHeading .box1 .eg-heading6,
+.footerHeading .box2 .eg-heading6,
+.footerHeading .box3 .eg-heading6{
+    font: 1.125rem var(--headingfont); 
+}
+.footerHeading .box1 .eg-para,
+.footerHeading .box2 .eg-para,
+.footerHeading .box3 .eg-para{
+    font:0.875rem var(--parafont);
+}
+.footerHeading .container .row2{
+    width: 100%;
+    margin: 30px 0 25px;
+    text-align: center;
+    font: 0.875rem var(--parafont);
+}
+
+.footer .container{
+    max-height:30%;
+    width:100%;
+    height: 100px;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    background: #333333;
+}
+
+.footer .container a{
+    color: lightblue;
+    font-family: var(--parafont);
+    letter-spacing: 1px;
+    &:hover{
+        color:#4d4a4a;
+        text-decoration: none;
+    }
+}
+.footer .container .eg-span{
+    color: white;
+    margin: 0 3px;
+    letter-spacing: 1px;
+    font-family: var(--parafont);
+}
+
+
+
+
+/*   ++++++++++  media quary  ++++++++++ */
+
+
+@media only screen and (max-width:480px){
+
+    /* ++++++++++  fashiounRulesforMen  ++++++++++ */
+    .fashionRulesforMen{
+        max-height: 1450px;
+    }
+    .fashionRulesforMen .container{
+        height: auto;
+    }
+    .fashionRulesforMen .container .contentContainer{
+        bottom: 430px;
+    }
+    .fashionRulesforMen .contentContainer .row1{
+        flex-direction: column;
+    }
+    .fashionRulesforMen .row1 .col1 .eg-heading2{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .fashionRulesforMen .row1 .col1 .img{
+        display: none;
+    }
+    .fashionRulesforMen .row1 .col2{
+        display: flex;
+        justify-content: left;
+    }
+    .fashionRulesforMen .row1 .col2 .img{
+        bottom: 0;
+        left: 0;
+        top: 20px;
+        width: calc(87% + 2px);
+    }
+    .fashionRulesforMen .row2{
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 50px;
+    }
+
+    /* ++++++++++ Brand Section  ++++++++++ */
+    .clothingBrand .innerContainer{
+        width: 95%;
+    }
+    .clothingBrand .eg-heading2{
+        font-size: 1.875rem;
+    }
+    .clothingBrand .eg-para{
+        padding: 0 30px;
+    }
+
+
+    /*  ++++++++++ HOW TO START  ++++++++++  */
+    .howtoStart .container{
+        margin-top: 150px;
+        flex-wrap: wrap;
+        padding-left: 6%;
+    }
+    .howtoStart .container::before{
+        width: calc(((100% - 750px) / 2) + 400px);
+        height: 670px;
+    }
+    .howtoStart .eg-col1 .img{
+        height:calc(100vw / 1.6);
+        width:calc(100vw / 1.18);
+    }
+    .howtoStart .eg-col1{
+        height: 50rem;
+    }
+    .howtoStart .eg-cardContainer{
+        width: 85vw;
+        bottom: 0;
+        top: 50px;
+        right: 10px;
+    }
+    .howtoStart .eg-card .eg-heading2{
+        font-size: 1.5rem;
+    }
+    .howtoStart .eg-card .eg-para{
+        padding: 0;
+    }
+    .howtoStart .eg-col2{
+        padding: 50px 0 30px;
+    }
+
+    /*  ++++++++++ fashion section  ++++++++++ */
+    .fashion{
+       height:auto ;
+    }
+    .fashion .container::before{
+       width: calc(((100% - 610px) / 2) + 420px);
+       height: 680px;
+       top: 113px;
+    }
+    .fashion .container{
+        margin: 81px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .fashion .container .col1 .iconContainer{
+        height: 1100px;
+        width: 80vw;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4,1fr);
+        top: auto;
+        bottom: 280px;
+        padding: 30px 13px 0 20px;
+    }
+    .fashion .container .col2{
+        gap: 69px;
+        justify-content: space-around;
+    }
+    .fashion .container .col2 .eg-img{
+        height: 430px;
+        width: 270px;
+        right: -15px;
+    }
+    .fashion .container .col2 .eg-heading2{
+        top: 75px;
+        right:3vw;
+    }
+
+     /* ++++++++++ style tips ++++++++++ */
+     .styleTips .container .eg-heading2{
+        text-align: center;
+     }
+     .styleTips .container .row2{
+        flex-wrap: wrap;
+     }
+     .styleTips .container .line{
+        height: 4px;
+        width: 150px;
+     }
+     .styleTips .container .row2 .eg-para{
+        padding: 0 30px;
+        text-align: center;
+     }
+
+    /* ++++++++++ start line  ++++++++++ */
+    .startThisLine{
+        min-height: 1340px;
+        position: relative;
+        margin-top: 200px;
+    }
+    .startThisLine::before{
+        width: calc(((100% - 340px) / 2) + 250px);
+        height: 1220px;
+
+    }
+    .startThisLine .container{
+        position:static;
+        justify-content: center;
+        align-items: center;
+    }
+    .startThisLine .img{
+        height: 65vw;
+        width: 85vw;
+        top: 60px;
+    }
+    .startThisLine .img img{
+        object-position: 25% 10%;
+    }
+    .startThisLine .box1{
+        height: 320px;
+        width: 330px;
+        top:340px;
+        left: auto;
+    }
+    .startThisLine .box2{
+        height: 490px;
+        width: 87vw;
+        top: 700px;
+        bottom: 0;
+        left: auto;
+        right:25px;
+    }
+
+    .outfit .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        max-height: none;
+    }
+    .outfit .eg-col1{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col1 .eg-heading2{
+        padding-left: 50px;
+        font-size: 2rem;
+    }
+    .outfit .eg-col1 .img{
+        height: 55vh;
+        width: 68vw;
+        box-shadow: 8vw 8vw 0px 0px var(--bgcolor);
+    }
+    .outfit .eg-col2{
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col2 .img{
+        height: 55vh;
+        width: 68vw;
+    }
+    .outfit .eg-col2 .eg-para{
+        padding: 0 25px 40px;
+    }
+    .footerHeading .container .row1{
+        flex-direction: column;
+    }
+    .footerHeading .container{
+        height: 430px;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+
+    /* ++++++++++  fashiounRulesforMen  ++++++++++ */
+    .fashionRulesforMen{
+        max-height: 1520px;
+    }
+    .fashionRulesforMen .container{
+        height: auto;
+    }
+    .fashionRulesforMen .container .contentContainer{
+        bottom: 430px;
+    }
+    .fashionRulesforMen .contentContainer .row1{
+        flex-direction: column;
+    }
+    .fashionRulesforMen .row1 .col1 .eg-heading2{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .fashionRulesforMen .row1 .col1 .img{
+        display: none;
+    }
+    .fashionRulesforMen .row1 .col2{
+        display: flex;
+        justify-content: left;
+    }
+    .fashionRulesforMen .row1 .col2 .img{
+        bottom: 0;
+        left: 0;
+        height: 80vw;
+        width: 81vw;
+        top: 20px;
+        width: calc(87% + 2px);
+    }
+    .fashionRulesforMen .row2{
+        margin-top: 60px;
+        gap: 50px;
+    }
+    .fashionRulesforMen .row2 .col2{
+        flex: none;
+    }
+
+    /* ++++++++++ Brand Section  ++++++++++ */
+    .clothingBrand .innerContainer{
+        width: 95%;
+    }
+    .clothingBrand .eg-heading2{
+        font-size: 1.875rem;
+    }
+    .clothingBrand .eg-para{
+        padding: 0 30px;
+    }
+
+
+    /*  ++++++++++ HOW TO START  ++++++++++  */
+    .howtoStart .container{
+        margin-top: 150px;
+        flex-wrap: wrap;
+        padding-left: 6%;
+        gap: 50px;
+    }
+    .howtoStart .container::before{
+        width: calc(((100% - 750px) / 2) + 400px);
+        height: 670px;
+    }
+    .howtoStart .eg-col1 .img{
+        height:calc(100vw / 1.6);
+        width:calc(100vw / 1.18);
+    }
+    .howtoStart .eg-col1{
+        height: 50rem;
+    }
+    .howtoStart .eg-cardContainer{
+        width: 85vw;
+        bottom: 0;
+        top: 50px;
+        right: 10px;
+    }
+    .howtoStart .eg-card .eg-heading2{
+        font-size: 1.5rem;
+    }
+    .howtoStart .eg-card .eg-para{
+        padding: 0;
+    }
+    .howtoStart .eg-col2{
+        padding: 50px 0 30px;
+    }
+
+    /*  ++++++++++ fashion section  ++++++++++ */
+    .fashion{
+       height:auto ;
+    }
+    .fashion .container::before{
+       width: calc(((100% - 610px) / 2) + 420px);
+       height: 680px;
+       top: 113px;
+    }
+    .fashion .container{
+        margin: 81px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .fashion .container .col1 .iconContainer{
+        height: 1100px;
+        width: 60vw;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4,1fr);
+        top: auto;
+        bottom: 280px;
+        padding: 30px 13px 0 20px;
+    }
+    .fashion .container .col2{
+        gap: 69px;
+        justify-content: space-around;
+    }
+    .fashion .container .col2 .eg-img{
+        height: 480px;
+        width: 350px;
+        left:15px;
+    }
+    .fashion .container .col2 .eg-heading2{
+        top: 75px;
+        right:3vw;
+    }
+
+     /* ++++++++++ style tips ++++++++++ */
+     .styleTips .container .eg-heading2{
+        text-align: center;
+     }
+     .styleTips .container .row2{
+        flex-wrap: wrap;
+     }
+     .styleTips .container .line{
+        height: 4px;
+        width: 150px;
+     }
+     .styleTips .container .row2 .eg-para{
+        padding: 0 30px;
+        text-align: center;
+     }
+
+    /* ++++++++++ start line  ++++++++++ */
+    .startThisLine{
+        min-height: 1000px;
+        position: relative;
+        margin-top: 200px;
+    }
+    .startThisLine::before{
+        width: calc(((100% - 340px) / 2) + 250px);
+        height: 700px;
+
+    }
+    .startThisLine .container{
+        position:static;
+        justify-content: center;
+        align-items: center;
+    }
+    .startThisLine .img{
+        height: 57vw;
+        width: 85vw;
+        top: 60px;
+    }
+    .startThisLine .img img{
+        object-position: 25% 10%;
+    }
+    .startThisLine .box1{
+        height: 50vw;
+        width: 41vw;
+        top:31rem;
+        left: auto;
+        right: 25rem;
+    }
+    .startThisLine .box2{
+        height: 61vw;
+        width: 52vw;
+        top: 442px;
+        bottom: 0;
+        left: auto;
+        right: 20px;;
+    }
+
+    .outfit .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        max-height: none;
+    }
+    .outfit .eg-col1{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col1 .eg-heading2{
+        padding-left: 50px;
+        font-size: 2rem;
+    }
+    .outfit .eg-col1 .img{
+        width: 68vw;
+        box-shadow: 8vw 8vw 0px 0px var(--bgcolor);
+    }
+    .outfit .eg-col2{
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col2 .img{
+        width: 68vw;
+    }
+    .outfit .eg-col2 .eg-para{
+        padding: 0 25px 40px;
+    }
+    .footerHeading .container .row1{
+        flex-direction: column;
+    }
+    .footerHeading .container{
+        height: 430px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:835px){
+
+    /* ++++++++++  fashiounRulesforMen  ++++++++++ */
+    .fashionRulesforMen{
+        max-height: 1160px;
+    }
+    .fashionRulesforMen .container{
+        height: auto;
+    }
+    .fashionRulesforMen .container .contentContainer{
+        bottom: 430px;
+    }
+    .fashionRulesforMen .row1 .col1 .eg-heading2{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .fashionRulesforMen .row1 .col2{
+        display: flex;
+        justify-content: right;
+    }
+    .fashionRulesforMen .row1 .col2 .img{
+        bottom: 0;
+        left: 0;
+        height: 96%;
+        top: 20px;
+        width: calc(87% + 2px);
+    }
+    .fashionRulesforMen .row2 .col1{
+        flex: none;
+    }
+    .fashionRulesforMen .row2{
+        margin-top: 60px;
+        gap: 50px;
+    }
+
+    /* ++++++++++ Brand Section  ++++++++++ */
+    .clothingBrand .innerContainer{
+        width: 95%;
+    }
+    .clothingBrand .eg-heading2{
+        font-size: 1.875rem;
+    }
+    .clothingBrand .eg-para{
+        padding: 0 30px;
+    }
+
+
+    /*  ++++++++++ HOW TO START  ++++++++++  */
+    .howtoStart .container{
+        margin-top: 150px;
+    }
+    .howtoStart .container::before{
+        width: calc(((100% - 750px) / 2) + 400px);
+        height: 750px;
+    }
+    .howtoStart .eg-col1 .img{
+        height:31%;
+        width:61vw;
+    }
+    .howtoStart .eg-cardContainer{
+        height:52%;
+        width: 54vw;
+        bottom: 50px;
+        right: 25px;
+    }
+    .howtoStart .eg-card .eg-heading2{
+        font-size: 1.5rem;
+    }
+    .howtoStart .eg-col2{
+        padding: 90px 0 0 30px;
+    }
+
+    /*  ++++++++++ fashion section  ++++++++++ */
+    
+    .fashion .container .col1 .iconContainer{
+        height: 550px;
+        width: 56vw;
+        top: 83p;
+    }
+    .fashion .container .col2 .eg-img{
+        height:590px;
+        width:auto;
+        right: 141px;
+    }
+    .fashion .container .col2 .eg-heading2{
+        top: 270px;
+        right:66px;
+    }
+
+     /* ++++++++++ style tips ++++++++++ */
+     .styleTips .container .eg-heading2{
+        text-align: center;
+     }
+     .styleTips .container .row2{
+        flex-wrap: wrap;
+     }
+     .styleTips .container .line{
+        height: 4px;
+        width: 150px;
+     }
+     .styleTips .container .row2 .eg-para{
+        padding: 0 30px;
+        text-align: center;
+     }
+
+    /* ++++++++++ start line  ++++++++++ */
+    .startThisLine{
+        min-height: 1100px;
+        position: relative;
+        margin-top: 200px;
+    }
+    .startThisLine::before{
+        width: calc(((100% - 340px) / 2) + 250px);
+        height: 805px;
+
+    }
+    .startThisLine .container{
+        position:static;
+        justify-content: center;
+        align-items: center;
+    }
+    .startThisLine .img{
+        height: 57vw;
+        width: 85vw;
+        top: 60px;
+    }
+    .startThisLine .img img{
+        object-position: 25% 10%;
+    }
+    .startThisLine .box1{
+        height: 51vw;
+        width: 41vw;
+        top:36rem;
+        left: auto;
+        right: 32rem;
+        bottom:none;
+    }
+    .startThisLine .box2{
+        height:56vw;
+        width: 48vw;
+        top: 442px;
+        bottom: 0;
+        left: auto;
+        right: 40px;;
+    }
+
+    .outfit .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        max-height: none;
+    }
+    .outfit .eg-col1{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col1 .eg-heading2{
+        padding-left: 50px;
+        font-size: 2rem;
+    }
+    .outfit .eg-col1 .img{
+        width: 45vw;
+        box-shadow: 8vw 8vw 0px 0px var(--bgcolor);
+    }
+    .outfit .eg-col2{
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col2 .img{
+        width: 45vw;
+    }
+    .outfit .eg-col2 .eg-para{
+        padding: 0 25px 40px;
+    }
+}
+@media only screen and (min-width:836px) and (max-width:1024px){
+
+    /* ++++++++++  fashiounRulesforMen  ++++++++++ */
+    .fashionRulesforMen{
+        max-height: 1160px;
+    }
+    .fashionRulesforMen .container{
+        height: auto;
+    }
+    .fashionRulesforMen .container .contentContainer{
+        bottom: 430px;
+    }
+    .fashionRulesforMen .row1 .col1 .eg-heading2{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .fashionRulesforMen .row1 .col2{
+        display: flex;
+        justify-content: right;
+    }
+    .fashionRulesforMen .row1 .col2 .img{
+        bottom: 0;
+        left: 0;
+        height: 96%;
+        top: 20px;
+        width: calc(87% + 2px);
+    }
+    .fashionRulesforMen .row2 .col1{
+        flex: none;
+    }
+    .fashionRulesforMen .row2{
+        margin-top: 60px;
+        gap: 50px;
+    }
+
+    /* ++++++++++ Brand Section  ++++++++++ */
+    .clothingBrand .container{
+        max-width: 75vw;
+    }
+    .clothingBrand .innerContainer{
+        width: 95%;
+    }
+    .clothingBrand .eg-heading2{
+        font-size: 1.875rem;
+    }
+    .clothingBrand .eg-para{
+        padding: 0 30px;
+    }
+
+
+    /*  ++++++++++ HOW TO START  ++++++++++  */
+    .howtoStart .container{
+        margin-top: 150px;
+    }
+    .howtoStart .container::before{
+        width: calc(((100% - 800px) / 2) + 280px);
+        height: 750px;
+    }       
+    .howtoStart .eg-col1 .img{
+        height:36%;
+        width:50vw;
+        margin-left: 75px;
+    }
+    .howtoStart .eg-cardContainer{
+        height:50%;
+        width: 45vw;
+        bottom: 50px;
+        right: 25px;
+    }
+    .howtoStart .eg-card .eg-heading2{
+        font-size: 1.5rem;
+    }
+    .howtoStart .eg-col2{
+        padding: 90px 0 0 30px;
+    }
+
+    /*  ++++++++++ fashion section  ++++++++++ */
+    
+    .fashion .container .col1 .iconContainer{
+        height: 550px;
+        width: 56vw;
+        top: 83p;
+    }
+    .fashion .container .col2 .eg-img{
+        height:590px;
+        width:auto;
+        right: 141px;
+    }
+    .fashion .container .col2 .eg-heading2{
+        top: 270px;
+        right:66px;
+    }
+
+     /* ++++++++++ style tips ++++++++++ */
+     .styleTips .container .eg-heading2{
+        text-align: center;
+     }
+     .styleTips .container .row2{
+        flex-wrap: wrap;
+     }
+     .styleTips .container .line{
+        height: 4px;
+        width: 150px;
+     }
+     .styleTips .container .row2 .eg-para{
+        padding: 0 30px;
+        text-align: center;
+     }
+
+    /* ++++++++++ start line  ++++++++++ */
+    .startThisLine{
+        min-height: 1100px;
+        position: relative;
+        margin-top: 200px;
+    }
+    .startThisLine::before{
+        width: calc(((100% - 340px) / 2) + 250px);
+        height: 805px;
+
+    }
+    .startThisLine .container{
+        position:static;
+        justify-content: center;
+        align-items: center;
+    }
+    .startThisLine .img{
+        height: 54vw;
+        width: 81vw;
+        top: 60px;
+    }
+    .startThisLine .img img{
+        object-position: 25% 10%;
+    }
+    .startThisLine .box1{
+        height: 40vw;
+        width: 36vw;
+        top:32rem;
+        left: auto;
+        right: 35rem;
+        bottom:0;
+    }
+    .startThisLine .box2{
+        height:50vw;
+        width: 41vw;
+        top:442px;
+        bottom: 0;
+        left: auto;
+        right: 40px;;
+    }
+
+    .outfit .container{
+        justify-content: center;
+        gap: 50px;
+        max-height: none;
+    }
+    .outfit .eg-col1{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col1 .eg-heading2{
+        padding:0 205px 0 70px;
+        font-size: 2.25rem;
+    }
+    .outfit .eg-col1 .img{
+        width: 40vw;
+        box-shadow: 6vw 6vw 0px 0px var(--bgcolor);
+    }
+    .outfit .eg-col2{
+        justify-content: center;
+        align-items: center;
+    }
+    .outfit .eg-col2 .img{
+        width: 40vw;
+    }
+    .outfit .eg-col2 .eg-para{
+        padding: 0 25px 40px;
+        font-size: 1.125rem;
+    }
+}
